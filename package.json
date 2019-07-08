@@ -5,7 +5,7 @@
   "main": "build/main.js",
   "module": "build/module.js",
   "engines": {
-    "node": "8.x"
+    "node": "10.x"
   },
   "scripts": {
     "start": "npm run serve",
