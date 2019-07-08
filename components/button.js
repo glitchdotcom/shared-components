@@ -23,28 +23,12 @@ export const TransparentButton = styled(BaseButton)`
 `;
 
 // TODO: use theme colors/sizes
-const normal = styled.css`
-  color: #222;
-  background-color: #FFF;
-  border: 2px solid #222;
+
+const smallStyles = styled.css`
+  padding-top: 5px;
+  padding-bottom: 3px;
+  border-width: 1px;
 `;
-
-const secondary = styled.css`
-  color: #727272;
-  background-color: #FFF;
-  border: 1px solid #B8B8B8;
-`
-
-const cta = styled.css`
-  color: #222;
-  background-color: #83ffcd;
-  border: 2px solid #222;
-`;
-
-const shadow = styled.css`
-  box-shadow: 4px 4px 0 #222;
-`;
-
 
 const StyledButton = styled(BaseButton)`
   cursor: pointer;
@@ -56,6 +40,28 @@ const StyledButton = styled(BaseButton)`
   position: relative;
   text-align: left;
   text-decoration: none;
+  color: #222;
+  background-color: #FFF;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  border: 2px solid #222;
+  
+  ${({ buttonType }) => ({
+    cta: styled.css`
+      background-color: #83ffcd;
+      box-shadow: 4px 4px 0 #222;
+    `,
+    secondary: styled.css`
+      color: #727272;
+      padding-top: 7px;
+      padding-bottom: 6px;
+      border: 1px solid #B8B8B8;
+    `,
+  })[buttonType]}
+
+  ${({ size }) => ({
+    sm
+  })}
 `;
 
 export const LinkButton = (props) => <Button as="a" {...props} />;
