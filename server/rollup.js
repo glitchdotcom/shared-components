@@ -18,9 +18,9 @@ async function build({ filePath, external, bundleOptions }) {
         exclude: ['node_modules/**'],
         transforms: ['jsx']
       }),
-      resolve({ preferBuiltins: false }),
-      commonjs(),
-      json(),
+      //resolve({ preferBuiltins: false }),
+      //commonjs(),
+      //json(),
     ],
   };
 

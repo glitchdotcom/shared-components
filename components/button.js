@@ -50,7 +50,7 @@ const StyledButton = styled(BaseButton)`
       box-shadow: 4px 4px 0 #222;
       &:active {
         background-color: #83ffcd;
-        
+        box-shadow: none;
       }
     `,
     secondary: styled.css`
