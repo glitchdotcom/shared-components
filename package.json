@@ -1,22 +1,23 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "name": "@glitch/components",
+  "version": "1.0.0",
+  "description": "Shared components",
+  "main": "build/main.js",
+  "module": "build/module.js",
+  "engines": {
+    "node": "8.x"
+  },
   "scripts": {
-    "start": "node server.js"
+    "start": "npm run serve",
+    "serve": "node server/index.js",
+    "prettify": "prettier --write './**/*.js'",
+    "lint": "eslint ."
   },
   "dependencies": {
     "express": "^4.16.4"
   },
-  "engines": {
-    "node": "8.x"
-  },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
+    "url": "https://glitch.com/edit/#!/glitch-component-library"
   },
   "license": "MIT",
   "keywords": [
