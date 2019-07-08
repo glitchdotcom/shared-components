@@ -88,9 +88,23 @@ LinkButton.propTypes = {
   href: PropTypes.string.isRequired,
 };
 
-export const story_Button = () => (
-  <div>
-    <
-  
-  </div>
-) 
+
+export function story_Button () {
+  const onClick = () => console.log('clicked');
+
+  return (
+    <div>
+      <Button onClick={onClick}>Normal</Button>
+      <br />
+      <Button buttonType="cta" onClick={onClick}>CTA</Button>
+      <br />
+      <Button buttonType="secondary" onClick={onClick}>Secondary</Button>
+      <br />
+      <Button size="small" onClick={onClick}>Normal Small</Button>
+      <br />
+      <Button size="small" buttonType="cta" onClick={onClick}>CTA Small</Button>
+      <br />
+      <Button size="small" buttonType="secondary" onClick={onClick}>Secondary Small</Button>
+    </div>
+  );  
+}
