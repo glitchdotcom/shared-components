@@ -1,9 +1,5 @@
 const path = require('path');
 const rollup = require('rollup');
-const sucrase = require('rollup-plugin-sucrase');
-const resolve = require('rollup-plugin-node-resolve');
-const commonjs = require('rollup-plugin-commonjs');
-const json = require('rollup-plugin-json');
 
 const { watchFiles } = require('./watch');
 
@@ -18,6 +14,7 @@ async function build({ filePath, external, bundleOptions }) {
         exclude: ['node_modules/**'],
         transforms: ['jsx']
       }),
+      // these might be needed eventually, but are not currently required
       //resolve({ preferBuiltins: false }),
       //commonjs(),
       //json(),
