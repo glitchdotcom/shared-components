@@ -12,6 +12,7 @@ for (const module of modules) {
     }
   }
 }
+console.log(modules)
 
 const AppContainer = () => (
   <main>
@@ -23,7 +24,5 @@ const AppContainer = () => (
   </main>
 );
 
-window.addEventListener('DOMContentLoaded', () => {
-  const root = document.getElementById('root');
-  ReactDOM.render(<AppContainer />, root);
-});
+const root = document.getElementById('root');
+ReactDOM.render(<AppContainer />, root);

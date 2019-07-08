@@ -62,3 +62,5 @@ function getBundle(filePath, { external, bundleOptions }) {
   }
   return cache[filePath];
 }
+
+module.exports = { getBundle };
