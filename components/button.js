@@ -22,26 +22,40 @@ export const TransparentButton = styled(BaseButton)`
   width: 100%;
 `;
 
-const largeButton = styled.css`
-  font-size: var(--text-4);
-  padding: var(--u1) var(--u2);
+// TODO: use theme colors/sizes
+const normal = styled.css`
+  color: #222;
+  background-color: #FFF;
+  border: 2px solid #222;
+`;
+
+const secondary = styled.css`
+  color: #727272;
+  background-color: #FFF;
+  border: 1px solid #B8B8B8;
+`
+
+const cta = styled.css`
+  color: #222;
+  background-color: #83ffcd;
+  border: 2px solid #222;
+`;
+
+const shadow = styled.css`
+  box-shadow: 4px 4px 0 #222;
 `;
 
 
 const StyledButton = styled(BaseButton)`
-  background-color: var(--primary-background);
-  border: solid var(--primary) 2px;
-  border-radius: var(--u1);
-  color: var(--primary);
   cursor: pointer;
   display: inline-block;
-  font-family: var(--sansserif);
+  border-radius: 5px;
+  font-family: "Benton Sans", sans-serif;
   font-weight: 600;
   line-height: 1;
   position: relative;
   text-align: left;
   text-decoration: none;
-  
 `;
 
 export const LinkButton = (props) => <Button as="a" {...props} />;
