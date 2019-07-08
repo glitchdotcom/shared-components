@@ -23,6 +23,7 @@ export const UnstyledButton = styled(BaseButton)`
 `;
 
 // TODO: use theme colors/sizes
+// TODO: handle emoji positioning
 
 const StyledButton = styled(BaseButton)`
   cursor: pointer;
@@ -64,11 +65,32 @@ const StyledButton = styled(BaseButton)`
   })[size]}
 `;
 
-export const Button = StyledButton;
+StyledButton.propTypes = {
+  children: PropTypes.isRequired,
+  buttonType: PropTypes.oneOf(['primary', 'secondary', 'cta']),
+  size: PropTypes.oneOf(['small', 'large']),
+};
+
+StyledButton.defaultProps = {
+  buttonType: 'primary',
+  size: 'large',
+};
+
+export const Button = (props) => <StyledButton {...props} />;
 Button.propTypes = {
-  
-}
+  onClick: PropTypes.func.isRequired,
+};
 
 export const DecorativeButton = (props) => <StyledButton as="div" {...props} />;
 
 export const LinkButton = (props) => <StyledButton as="a" {...props} />;
+LinkButton.propTypes = {
+  href: PropTypes.string.isRequired,
+};
+
+export const story_Button = () => (
+  <div>
+    <
+  
+  </div>
+) 
