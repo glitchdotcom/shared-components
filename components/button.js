@@ -30,6 +30,7 @@ const StyledButton = styled(BaseButton)`
   display: inline-block;
   border-radius: 5px;
   font-family: "Benton Sans", sans-serif;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1;
   position: relative;
@@ -37,20 +38,24 @@ const StyledButton = styled(BaseButton)`
   text-decoration: none;
   color: #222;
   background-color: #FFF;
-  padding-top: 6px;
-  padding-bottom: 5px;
+  padding: 6px 8px 5px;
   border: 2px solid #222;
-  font-size: 12px;
+  &:active {
+    background-color: #e5e5e5;
+  }
   
   ${({ buttonType }) => ({
     cta: styled.css`
       background-color: #83ffcd;
       box-shadow: 4px 4px 0 #222;
+      &:active {
+        background-color: #83ffcd;
+        
+      }
     `,
     secondary: styled.css`
       color: #727272;
-      padding-top: 7px;
-      padding-bottom: 6px;
+      padding: 7px 8px 6px;
       border: 1px solid #B8B8B8;
     `,
   })[buttonType]}
@@ -58,15 +63,14 @@ const StyledButton = styled(BaseButton)`
   ${({ size }) => ({
     small: styled.css`
       font-size: 14px;
-      padding-top: 5px;
-      padding-bottom: 3px;
+      padding: 5px 6px 3px;
       border-width: 1px;
     `,
   })[size]}
 `;
 
 StyledButton.propTypes = {
-  children: PropTypes.isRequired,
+  children: PropTypes.node.isRequired,
   buttonType: PropTypes.oneOf(['primary', 'secondary', 'cta']),
   size: PropTypes.oneOf(['small', 'large']),
 };
@@ -88,23 +92,28 @@ LinkButton.propTypes = {
   href: PropTypes.string.isRequired,
 };
 
+const Wrap = styled.div`
+  margin: 1rem;
+  > * {
+    margin-right: 1rem;
+  }
+`;
 
 export function story_Button () {
   const onClick = () => console.log('clicked');
 
   return (
     <div>
-      <Button onClick={onClick}>Normal</Button>
-      <br />
-      <Button buttonType="cta" onClick={onClick}>CTA</Button>
-      <br />
-      <Button buttonType="secondary" onClick={onClick}>Secondary</Button>
-      <br />
-      <Button size="small" onClick={onClick}>Normal Small</Button>
-      <br />
-      <Button size="small" buttonType="cta" onClick={onClick}>CTA Small</Button>
-      <br />
-      <Button size="small" buttonType="secondary" onClick={onClick}>Secondary Small</Button>
+      <Wrap>
+        <Button onClick={onClick}>Normal</Button>
+        <Button buttonType="secondary" onClick={onClick}>Secondary</Button>
+        <Button buttonType="cta" onClick={onClick}>CTA</Button>
+      </Wrap>
+      <Wrap>
+        <Button size="small" onClick={onClick}>Normal Small</Button>
+        <Button size="small" buttonType="secondary" onClick={onClick}>Secondary Small</Button>
+        <Button size="small" buttonType="cta" onClick={onClick}>CTA Small</Button>
+      </Wrap>
     </div>
   );  
 }
