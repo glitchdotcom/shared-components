@@ -17,18 +17,12 @@ const BaseButton = styled.button.attrs((props) => ({
   text-transform: none;
 `;
 
-export const TransparentButton = styled(BaseButton)`
+export const UnstyledButton = styled(BaseButton)`
   display: block;
   width: 100%;
 `;
 
 // TODO: use theme colors/sizes
-
-const smallStyles = styled.css`
-  padding-top: 5px;
-  padding-bottom: 3px;
-  border-width: 1px;
-`;
 
 const StyledButton = styled(BaseButton)`
   cursor: pointer;
@@ -45,6 +39,7 @@ const StyledButton = styled(BaseButton)`
   padding-top: 6px;
   padding-bottom: 5px;
   border: 2px solid #222;
+  font-size: 12px;
   
   ${({ buttonType }) => ({
     cta: styled.css`
@@ -60,8 +55,20 @@ const StyledButton = styled(BaseButton)`
   })[buttonType]}
 
   ${({ size }) => ({
-    sm
-  })}
+    small: styled.css`
+      font-size: 14px;
+      padding-top: 5px;
+      padding-bottom: 3px;
+      border-width: 1px;
+    `,
+  })[size]}
 `;
 
-export const LinkButton = (props) => <Button as="a" {...props} />;
+export const Button = StyledButton;
+Button.propTypes = {
+  
+}
+
+export const DecorativeButton = (props) => <StyledButton as="div" {...props} />;
+
+export const LinkButton = (props) => <StyledButton as="a" {...props} />;
