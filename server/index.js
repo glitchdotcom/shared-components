@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const { getBundle } = require('./rollup');
-const { serveTest } = require('../test/remote-component/server')
+const { serveTest } = require('../test/remote-component/server');
 
 const globals = {
   react: 'React',
@@ -36,7 +36,6 @@ app.get('/module.js', async (req, res) => {
   res.type('js');
   res.send(output);
 });
-
 
 serveTest(app);
 
