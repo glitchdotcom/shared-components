@@ -11,8 +11,8 @@
     "start": "npm run serve",
     "serve": "node server/index.js",
     "rollup": "rollup lib/index.js -c",
-    "prettify": "prettier --write './{lib,server}/**/*.js'",
-    "lint": "eslint ./lib ./server"
+    "prettify": "prettier --write './{lib,server,test}/**/*.js'",
+    "lint": "eslint ./lib ./server ./test"
   },
   "dependencies": {
     "prop-types": "15.x",
