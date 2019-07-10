@@ -1,16 +1,17 @@
 const { getBundle } = require('../../server/rollup');
 
+
 const globals = {
   react: 'React',
   'react-dom': 'ReactDOM',
   'styled-components': 'styled',
   'prop-types': 'PropTypes',
-  '@glitch/components': 'window["glitch-component-library"]'
+  '@glitch/components': `window["https://power-passenger.glitch.me/module.js"]`,
 };
 
 const serveTest = (app) => {
   app.get('/test/remote-component/index.js', async (req, res) => {
-    const output = await getBundle('/app/test/remote-component/index.js', { format: 'iife', output: { name: 'test' }, globals });
+    const output = await getBundle('/app/test/remote-component/index.js', { format: 'iife', globals });
     res.type('js');
     res.send(output);
   });

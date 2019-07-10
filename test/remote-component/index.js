@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createRemoteComponent } from '@glitch/components'
 
+try {
+
 const Button = createRemoteComponent('https://power-passenger.glitch.me/module.js', 'Button')
 const onClick = () => console.log('clicked')
-  
+
 const AppContainer = () => (
   <main>
     <h1>Test remote component</h1>
@@ -14,3 +16,7 @@ const AppContainer = () => (
   
 const root = document.getElementById('root');
 ReactDOM.render(<AppContainer />, root);
+  
+} catch (e) {
+  alert(e.message)
+}

@@ -1,7 +1,7 @@
 const sucrase = require('rollup-plugin-sucrase');
 
 module.exports = {
-  external: ['react', 'react-dom', 'prop-types', 'styled-components'],
+  external: ['react', 'react-dom', 'prop-types', 'styled-components', '@glitch/components'],
   output: [
     {
       file: 'build/main.js',

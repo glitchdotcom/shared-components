@@ -25,11 +25,11 @@ app.get('/stories.js', async (req, res) => {
 });
 
 app.get('/module.js', async (req, res) => {
-  const name = 'glitch-component-library';
+  const fullUrl = `https://${req.get('host')}${req.originalUrl}`;
   const output = await getBundle('/app/lib/index.js', {
     format: 'umd',
-    name,
-    amd: { id: name },
+    name: fullUrl,
+    amd: { id: fullUrl },
     exports: 'named',
     globals,
   });
