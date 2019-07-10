@@ -1,6 +1,5 @@
 const { getBundle } = require('../../server/rollup');
 
-
 const globals = {
   react: 'React',
   'react-dom': 'ReactDOM',
@@ -15,10 +14,10 @@ const serveTest = (app) => {
     res.type('js');
     res.send(output);
   });
-  
-  app.get('/test/remote-component', (req, res) => {
-    res.sendFile('/app/test/remote-component/index.html')
-  })
-}
 
-module.exports = { serveTest }
+  app.get('/test/remote-component', (req, res) => {
+    res.sendFile('/app/test/remote-component/index.html');
+  });
+};
+
+module.exports = { serveTest };
