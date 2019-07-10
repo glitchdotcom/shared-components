@@ -38,4 +38,3 @@ function watchFiles(fileNames, onChange) {
 }
 
 module.exports = { watchFiles };
-

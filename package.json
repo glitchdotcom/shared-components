@@ -10,15 +10,28 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "node server/index.js",
-    "prettify": "prettier --write './**/*.js'",
-    "lint": "eslint ."
+    "rollup": "rollup lib/index.js -c",
+    "prettify": "prettier --write './{lib,server}/**/*.js'",
+    "lint": "eslint ./lib ./server"
   },
   "dependencies": {
+    "prop-types": "15.x",
+    "react": "16.x",
+    "react-dom": "16.x",
+    "styled-components": "4.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-flowtype": "^2.50.3",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^1.5.0",
     "express": "^4.16.4",
-    "rollup": "^1.10.0",
-    "rollup-plugin-commonjs": "^9.3.1",
-    "rollup-plugin-json": "^3.1.0",
-    "rollup-plugin-node-resolve": "^4.2.3",
+    "prettier": "^1.18.2",
+    "rollup": "^1.16.7",
     "rollup-plugin-sucrase": "^2.1.0"
   },
   "repository": {

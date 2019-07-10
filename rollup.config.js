@@ -2,7 +2,6 @@ const sucrase = require('rollup-plugin-sucrase');
 
 module.exports = {
   external: ['react', 'react-dom', 'prop-types', 'styled-components'],
-  input: '/app/components/index.js',
   output: [
     {
       file: 'build/main.js',
@@ -11,7 +10,7 @@ module.exports = {
     {
       file: 'build/module.js',
       format: 'esm',
-    }
+    },
   ],
   plugins: [
     // transpiler just for JSX -> JS
@@ -19,11 +18,11 @@ module.exports = {
     sucrase({
       include: ['**/*.js'],
       exclude: ['node_modules/**'],
-      transforms: ['jsx']
+      transforms: ['jsx'],
     }),
     // these might be needed eventually, but are not currently required
     //resolve({ preferBuiltins: false }),
     //commonjs(),
     //json(),
   ],
-}
+};

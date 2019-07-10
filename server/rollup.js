@@ -1,27 +1,14 @@
-const path = require('path');
 const rollup = require('rollup');
 
+const rollupConfig = require('../rollup.config');
 const { watchFiles } = require('./watch');
 
-async function build({ filePath, external, bundleOptions }) {
-  const css = [];
-  const rollupConfig = {
+async function build({ filePath, bundleOptions }) {
+  const bundle = await rollup.rollup({
+    ...rollupConfig,
+    output: undefined,
     input: filePath,
-    external,
-    plugins: [
-      sucrase({
-        include: ['**/*.js'],
-        exclude: ['node_modules/**'],
-        transforms: ['jsx']
-      }),
-      // these might be needed eventually, but are not currently required
-      //resolve({ preferBuiltins: false }),
-      //commonjs(),
-      //json(),
-    ],
-  };
-
-  const bundle = await rollup.rollup(rollupConfig);
+  });
   const {
     output: [{ code, modules }],
   } = await bundle.generate(bundleOptions);
@@ -53,9 +40,9 @@ async function buildAndWatch(config) {
 
 const cache = {};
 
-function getBundle(filePath, { external, bundleOptions }) {
+function getBundle(filePath, bundleOptions) {
   if (!cache[filePath]) {
-    cache[filePath] = buildAndWatch({ filePath, external, bundleOptions });
+    cache[filePath] = buildAndWatch({ filePath, bundleOptions });
   }
   return cache[filePath];
 }
