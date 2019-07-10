@@ -28,7 +28,7 @@ app.get('/module.js', async (req, res) => {
   const fullUrl = `https://${req.get('host')}${req.originalUrl}`;
   const output = await getBundle('/app/lib/index.js', {
     format: 'umd',
-    name: fullUrl,
+    name: 'glitchComponentLibrary',
     amd: { id: fullUrl },
     exports: 'named',
     globals,

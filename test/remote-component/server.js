@@ -6,7 +6,7 @@ const globals = {
   'react-dom': 'ReactDOM',
   'styled-components': 'styled',
   'prop-types': 'PropTypes',
-  '@glitch/components': `window["https://power-passenger.glitch.me/module.js"]`,
+  '@glitch/components': 'glitchComponentLibrary',
 };
 
 const serveTest = (app) => {
