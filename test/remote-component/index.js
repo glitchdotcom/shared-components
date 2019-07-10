@@ -6,12 +6,11 @@ const Button = createRemoteComponent('https://power-passenger.glitch.me/module.j
 const onClick = () => console.log('clicked')
   
 const AppContainer = () => (
-    <main>
-      <h1>Test remote component</h1>
-      <Button onClick={onClick}>Click me</Button>
-    </main>
-  )
+  <main>
+    <h1>Test remote component</h1>
+    <Button onClick={onClick}>Click me</Button>
+  </main>
+)
   
-  const root = document.getElementById('root');
-  ReactDOM.render(<AppContainer />, root);
-
+const root = document.getElementById('root');
+ReactDOM.render(<AppContainer />, root);
