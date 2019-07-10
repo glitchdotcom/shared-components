@@ -5,15 +5,19 @@ const globals = {
   'react-dom': 'ReactDOM',
   'styled-components': 'styled',
   'prop-types': 'PropTypes',
-  '@glitch/components': 'glitch-component-library'
+  '@glitch/components': 'window["glitch-component-library"]'
 };
 
 const serveTest = (app) => {
-  app.get('/stories.js', async (req, res) => {
+  app.get('/test/remote-component/index.js', async (req, res) => {
     const output = await getBundle('/app/test/remote-component/index.js', { format: 'iife', output: { name: 'test' }, globals });
     res.type('js');
     res.send(output);
   });
+  
+  app.get('/test/remote-component', (req, res) => {
+    res.sendFile('/app/test/remote-component/index.html')
+  })
 }
 
 module.exports = { serveTest }
