@@ -15,7 +15,6 @@
     "lint": "eslint ./lib ./server ./test"
   },
   "dependencies": {
-    "@reach/menu-button": "0.1.x",
     "prop-types": "15.x",
     "react": "16.x",
     "react-dom": "16.x",
