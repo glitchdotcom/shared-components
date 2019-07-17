@@ -18,6 +18,7 @@
     "prop-types": "15.x",
     "react": "16.x",
     "react-dom": "16.x",
+    "react-textarea-autosize": "7.x",
     "styled-components": "4.x"
   },
   "devDependencies": {
