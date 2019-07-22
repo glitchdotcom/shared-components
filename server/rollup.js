@@ -3,9 +3,10 @@ const rollup = require('rollup');
 const rollupConfig = require('../rollup.config');
 const { watchFiles } = require('./watch');
 
-async function build({ filePath, bundleOptions }) {
+async function build({ filePath, bundleOptions, additionalConfig = {} }) {
   const bundle = await rollup.rollup({
     ...rollupConfig,
+    ...additionalConfig,
     output: undefined,
     input: filePath,
   });
@@ -40,9 +41,9 @@ async function buildAndWatch(config) {
 
 const cache = {};
 
-function getBundle(filePath, bundleOptions) {
+function getBundle(filePath, bundleOptions, additionalConfig) {
   if (!cache[filePath]) {
-    cache[filePath] = buildAndWatch({ filePath, bundleOptions });
+    cache[filePath] = buildAndWatch({ filePath, bundleOptions, additionalConfig });
   }
   return cache[filePath];
 }
