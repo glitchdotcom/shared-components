@@ -16,12 +16,11 @@
     "serve": "node server/index.js",
     "rollup": "rollup lib/index.js -c",
     "prettify": "prettier --write './{lib,server,test}/**/*.js'",
-    "lint": "eslint ./lib ./server ./test",
+    "lint": "eslint .",
     "test": "npm run lint"
   },
   "dependencies": {
     "prop-types": "15.x",
-    "react-textarea-autosize": "7.x",
     "styled-components": "4.x"
   },
   "peerDependencies": {
@@ -38,6 +37,7 @@
     "eslint-plugin-react-hooks": "^1.5.0",
     "express": "^4.16.4",
     "prettier": "^1.18.2",
+    "react": "^16.8.0",
     "rollup": "^1.16.7",
     "rollup-plugin-sucrase": "^2.1.0"
   },
