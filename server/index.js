@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 const { getBundle } = require('./rollup');
+const { serveTest } = require('../test/remote-component/server');
 
 const globals = {
   react: 'React',
@@ -22,6 +23,21 @@ app.get('/stories.js', async (req, res) => {
   res.type('js');
   res.send(output);
 });
+
+app.get('/module.js', async (req, res) => {
+  const fullUrl = `https://${req.get('host')}${req.originalUrl}`;
+  const output = await getBundle('/app/lib/index.js', {
+    format: 'umd',
+    name: 'glitchComponentLibrary',
+    amd: { id: fullUrl },
+    exports: 'named',
+    globals,
+  });
+  res.type('js');
+  res.send(output);
+});
+
+serveTest(app);
 
 const listener = app.listen(process.env.PORT, () => {
   console.log('Your app is listening on port ' + listener.address().port);
