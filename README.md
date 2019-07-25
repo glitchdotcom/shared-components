@@ -1,27 +1,30 @@
-Welcome to Glitch
-=================
+# shared-components
+This is a library of React components used on Glitch's community site and editor.
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+## Installation
+```sh
+npm install @glitch/shared-components
+```
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+This package has a peer dependency on React 16.8+ ("the one with hooks"); it also includes dependencies on prop-types and styled-components.
 
-Find out more [about Glitch](https://glitch.com/about).
+## Usage
+For documentation of available components, see [shared-components.glitch.me](https://shared-components.glitch.me).
 
+### Browser support
+This works as-is in evergreen browsers, but it uses features which may require polyfills, transpilation, or other fallbacks:
+- css custom properties (aka "css variables")
+- ES2018 features (e.g. async/await, object spread)
+- `<details>` and `<dialog>` HTML elements
 
-Your Project
-------------
+### In production applications
+In production applications, you will likely want to use the following babel plugins:
+- [babel-plugin-styled-components](https://www.styled-components.com/docs/tooling#babel-plugin)
+- [babel-plugin-transform-react-remove-prop-types](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types#readme)
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+## Development
+This package also renders its own documentation and development environment.
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+**TODO** explain how glitch remix / pull request flow works, use docs from community site
 
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
+**TODO** explain how remote component works
