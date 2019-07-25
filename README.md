@@ -6,7 +6,7 @@ This is a library of React components used on Glitch's community site and editor
 npm install @glitch/shared-components
 ```
 
-This package has a peer dependency on React 16.8+ ("the one with hooks"); it also includes dependencies on prop-types, styled-components, and react-textarea-autosize.
+This package has a peer dependency on React 16.8+ ("the one with hooks"); it also includes dependencies on prop-types and styled-components.
 
 ## Usage
 For documentation of available components, see [shared-components.glitch.me](https://shared-components.glitch.me).
