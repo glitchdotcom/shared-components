@@ -1,5 +1,5 @@
 {
-  "name": "@glitch/components",
+  "name": "@glitch/shared-components",
   "version": "1.0.0",
   "description": "Shared components",
   "main": "build/main.js",
@@ -12,7 +12,8 @@
     "serve": "node server/index.js",
     "rollup": "rollup lib/index.js -c",
     "prettify": "prettier --write './{lib,server,test}/**/*.js'",
-    "lint": "eslint ./lib ./server ./test"
+    "lint": "eslint ./lib ./server ./test",
+    "test": "npm run lint"
   },
   "dependencies": {
     "prop-types": "15.x",
