@@ -4,6 +4,10 @@
   "description": "Shared components",
   "main": "build/main.js",
   "module": "build/module.js",
+  "files": [
+    "build/main.js",
+    "build/module.js"
+  ],
   "engines": {
     "node": "10.x"
   },
