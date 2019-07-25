@@ -1,8 +1,5 @@
 dependencies:
   prop-types: 15.7.2
-  react: 16.8.6
-  react-dom: 16.8.6
-  react-textarea-autosize: 7.1.0
   styled-components: 4.3.2
 devDependencies:
   babel-eslint: 9.0.0
@@ -15,6 +12,7 @@ devDependencies:
   eslint-plugin-react-hooks: 1.6.1
   express: 4.16.4
   prettier: 1.18.2
+  react: 16.8.6
   rollup: 1.16.7
   rollup-plugin-sucrase: 2.1.0
 packages:
@@ -80,12 +78,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-09kHrO2Y0JWybW20qnt+UMlNTj7NUQByP6ubyq50Yj1QCDhbHfEmWk/uso+SaEi5XKNEWYVKbBgdiZisIaBPmw==
-  /@babel/runtime/7.5.4:
-    dependencies:
-      regenerator-runtime: 0.13.2
-    dev: false
-    resolution:
-      integrity: sha512-Na84uwyImZZc3FKf4aUF1tysApzwf3p2yuFBIyBfbzT5glzKTdvYI4KVW4kcgjrzoGUjC7w3YyCHcJKaRxsr2Q==
   /@babel/template/7.4.4:
     dependencies:
       '@babel/code-frame': 7.0.0
@@ -1540,36 +1532,16 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-9esiElv1BrZoI3rCDuOuKCBRbuApGGaDPQfjSflGxdy4oyzqghxu6klEkkVIvBje+FF0BX9coEv8KqW6X/7njw==
-  /react-dom/16.8.6:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      prop-types: 15.7.2
-      scheduler: 0.13.6
-    dev: false
-    peerDependencies:
-      react: ^16.0.0
-    resolution:
-      integrity: sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
   /react-is/16.8.6:
     resolution:
       integrity: sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
-  /react-textarea-autosize/7.1.0:
-    dependencies:
-      '@babel/runtime': 7.5.4
-      prop-types: 15.7.2
-    dev: false
-    peerDependencies:
-      react: '>=0.14.0 <17.0.0'
-    resolution:
-      integrity: sha512-c2FlR/fP0qbxmlrW96SdrbgP/v0XZMTupqB90zybvmDVDutytUgPl7beU35klwcTeMepUIQEpQUn3P3bdshGPg==
   /react/16.8.6:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       prop-types: 15.7.2
       scheduler: 0.13.6
-    dev: false
+    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -1594,6 +1566,7 @@ packages:
     resolution:
       integrity: sha1-jvHAYjxqbbDcZxPEv6xGMysjaPg=
   /regenerator-runtime/0.13.2:
+    dev: true
     resolution:
       integrity: sha512-S/TQAZJO+D3m9xeN1WTI8dLKBBiRgXBlTJvbWjCThHWZj9EvHK70Ff50/tYj2J/fvBY6JtFVwRuazHN2E7M9BA==
   /regexpp/2.0.1:
@@ -1680,7 +1653,7 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-IWnObHt413ucAYKsD9J1QShUKkbKLQQHdxRyw73sw4FN26iWr3DY/H34xGPe4nmL1DwXyWmSWmMrA9TfQbE/XQ==
   /semver/5.7.0:
@@ -2036,9 +2009,7 @@ specifiers:
   express: ^4.16.4
   prettier: ^1.18.2
   prop-types: 15.x
-  react: 16.x
-  react-dom: 16.x
-  react-textarea-autosize: 7.x
+  react: ^16.8.0
   rollup: ^1.16.7
   rollup-plugin-sucrase: ^2.1.0
   styled-components: 4.x
