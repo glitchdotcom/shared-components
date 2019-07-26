@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled, { ThemeProvider } from 'styled';
-import { darkTheme, RootStyle, createRemoteComponent } from '@glitch/shared-components';
+import { darkTheme, RootStyle, createRemoteComponent } from '@fogcreek/shared-components';
 
 const Icon = createRemoteComponent('https://sour-environment.glitch.me/module.js', 'Icon');
 
