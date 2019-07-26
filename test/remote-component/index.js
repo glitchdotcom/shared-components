@@ -10,7 +10,7 @@ const AppContainer = () => (
     <main>
       <RootStyle />
       <h1>Test remote component</h1>
-      <Icon icon="pushPin" size="huge" />
+      <Icon icon="pushpin" size="huge" />
     </main>
   </ThemeProvider>
 );
