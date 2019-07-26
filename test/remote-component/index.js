@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled';
-import { lightTheme, RootStyle, createRemoteComponent } from '@glitch/shared-components';
+import { darkTheme, RootStyle, createRemoteComponent } from '@glitch/shared-components';
 
-const Icon = createRemoteComponent('https://power-passenger.glitch.me/module.js', 'Icon');
+const Icon = createRemoteComponent('https://sour-environment.glitch.me/module.js', 'Icon');
 
 const AppContainer = () => (
-  <ThemeProvider theme={lightTheme}>
+  <ThemeProvider theme={darkTheme}>
     <main>
       <RootStyle />
       <h1>Test remote component</h1>
