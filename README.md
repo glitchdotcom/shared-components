@@ -27,4 +27,5 @@ This package also renders its own documentation and development environment.
 
 **TODO** explain how glitch remix / pull request flow works, use docs from community site
 
-**TODO** explain how remote component works
+### Remote components
+You may want to see how a 
