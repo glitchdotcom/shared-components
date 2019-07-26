@@ -28,4 +28,18 @@ This package also renders its own documentation and development environment.
 **TODO** explain how glitch remix / pull request flow works, use docs from community site
 
 ### Remote components
-You may want to see how a 
+While you are building or updating a component in this library, you may wish to see it in the context of your application. This package exports the helper `createRemoteComponent` that loads a development version of the library from a URL. For example:
+
+
+```js
+import { Icon, createRemoteComponent } from '@fogcreek/shared-components'
+
+const DevIcon = createRemoteComponent('https://sour-environment.glitch.me/module.js', 'Icon');
+```
+
+In the above case, `<Icon>` will render the Icon component as its defined in the version of shared-components on npm, but `<DevIcon>` will render the Icon component as its currently defined in the `sour-environment` remix. 
+
+Note that at this time, this only works for React components, not themes or other imports.
+
+
+You can see a demo of this in `/test/remote-component/index.js`.
