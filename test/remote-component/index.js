@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled';
+import styled, { ThemeProvider } from 'styled';
 import { darkTheme, RootStyle, createRemoteComponent } from '@glitch/shared-components';
 
 const Icon = createRemoteComponent('https://sour-environment.glitch.me/module.js', 'Icon');
 
+const Main = styled.main`
+  margin: 0 auto;
+  padding: var(--space-2);
+  max-width: 1200px;
+`;
+
 const AppContainer = () => (
   <ThemeProvider theme={darkTheme}>
-    <main>
+    <Main>
       <RootStyle />
       <h1>Test remote component</h1>
       <Icon icon="pushpin" size="huge" />
-    </main>
+    </Main>
   </ThemeProvider>
 );
 
