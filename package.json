@@ -1,6 +1,6 @@
 {
-  "name": "@glitch/shared-components",
-  "version": "1.0.0",
+  "name": "@fogcreek/shared-components",
+  "version": "0.1.0",
   "description": "Shared components",
   "main": "build/main.js",
   "module": "build/module.js",
@@ -42,7 +42,7 @@
     "rollup-plugin-sucrase": "^2.1.0"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-component-library"
+    "url": "https://github.com/FogCreek/shared-components"
   },
   "license": "MIT",
   "keywords": [
