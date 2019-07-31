@@ -17,7 +17,7 @@ const parseDiff = (diff) => {
   for (const line of lines) {
     const [changeType, file] = line.split(/\s/, 1)
     if (ignoredFiles.includes(file)) continue;
-    
+    // https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---diff-filterACDMRTUXB82308203
     if (changeType === 'A') {
       grouped.Added.push(file)
     } else if (changeType === 'D') {
@@ -37,7 +37,7 @@ const formatDiff = (parsedDiff) => {
     if (files.length === 0) continue
     lines.push(`### ${group}`)
     for (const file of files) {
-      lines.push(`- ${file} --`)
+      lines.push(`- \`${file}\`:`)
     }
   }
   return lines.join('\n')
