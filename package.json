@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "prop-types": "15.x",
+    "react-textarea-autosize": "^7.1.0",
     "styled-components": "4.x"
   },
   "peerDependencies": {
@@ -30,7 +31,7 @@
     "babel-eslint": "^9.0.0",
     "eslint": "^5.16.0",
     "eslint-config-react-app": "^4.0.1",
-    "eslint-plugin-flowtype": "^2.50.3", 
+    "eslint-plugin-flowtype": "^2.50.3",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
