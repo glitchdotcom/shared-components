@@ -56,10 +56,3 @@ async function main () {
   const changelogText = formatDiff(parsedDiff)
   await insertChanges(changelogText)
 }
-
-
-// https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---diff-filterACDMRTUXB82308203
-// A       changelog.md
-// A       lib/example.js
-// M       lib/index.js
-// M       lib/stories.js
