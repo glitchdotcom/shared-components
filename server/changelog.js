@@ -10,19 +10,37 @@ const ignoredFiles = ['lib/index.js', 'lib/stories.js', 'changelog.md', 'package
 
 const getGitDiff = () => exec("git diff origin/master --name-status");
 
-const parseDiff = (diff) => 
-  diff.split('\n')
-    .map(line => {
-      const [changeType, file] = line.split(/\s/, 1)
-      return { changeType, file } // TODO: these need to be 'resolve'-d
-    })
+const parseDiff = (diff) => {
+  const grouped = { Added: [], Removed: [], Changed: []}
+
+  const lines = diff.split('\n')
+  for (const line of lines) {
+    const [changeType, file] = line.split(/\s/, 1)
+    if (ignoredFiles.includes(file)) continue;
+    
+    if (changeType === 'A') {
+      grouped.Added.push(file)
+    } else if (changeType === 'D') {
+      grouped.Removed.push(file)
+    } else {
+      grouped.Changed.push(file)
+    }
+  }
+  return grouped; 
+}
 
 const formatDiff = (parsedDiff) => {
-  const filtered = parsedDiff(({ file }) => !ignoredFiles.includes(file));
-  const grouped = { added: [], removed: [], modified: []}
-  for (const change of filtered) {
-    if (changeType === 'A') {}
+  const [dateString] = new Date().toISOString().split('T')
+  const lines = [`## [${version}] - ${dateString}`]
+  
+  for (const [group, files] of Object.entries(parsedDiff)) {
+    if (files.length === 0) continue
+    lines.push(`### ${group}`)
+    for (const file of files) {
+      lines.push(`- ${file} --`)
+    }
   }
+  return lines.join('\n')
 }
 
 const insertChanges = async () => {
