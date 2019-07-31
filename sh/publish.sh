@@ -3,8 +3,12 @@
 # publish the current version of this remix to npm
 
 git checkout $1
+local commit = $(git rev-parse --short HEAD)
 npm ci
 npm run rollup
 
-if [$2 == ]
-npm version prerelease --preid=$(git rev-parse --short HEAD)
+if [[$2 != "--production"]]; then
+  npm version prerelease --preid=$commit
+fi
+npm publish
+git checkout $1
