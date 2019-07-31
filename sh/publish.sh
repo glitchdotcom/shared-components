@@ -4,6 +4,7 @@ set -e
 # publish the current version of this remix to npm
 
 git checkout $1
+git pull $1 master
 commit=$(git rev-parse --short HEAD)
 git checkout $commit
 npm ci
