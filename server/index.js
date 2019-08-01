@@ -30,7 +30,7 @@ app.get('/module.js', async (req, res) => {
   const output = await getBundle('/app/lib/index.js', {
     format: 'umd',
     name: 'glitchComponentLibrary',
-    amd: { id: fullUrl },
+    amd: { id: fullUrl, define: 'defineSharedComponent' },
     exports: 'named',
     globals,
   });
