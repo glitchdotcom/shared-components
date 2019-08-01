@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euo pipefail
 # sh/publish.sh <remix name> <"--production">
 # publish the current version of this remix to npm
 
