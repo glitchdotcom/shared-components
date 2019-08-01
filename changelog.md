@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## [unreleased]
-- `lib/checkbox-button.js`:  CheckboxButton component
+- `lib/animation-container.js`: `AnimationContainer` component, `slideUp` and `slideDown` animations
+- `lib/checkbox-button.js`:  `CheckboxButton` component
 
 ## [0.1.1] - 2019-07-31
 ### Added
@@ -16,4 +17,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] - 2019-07-31
 ### Added
-- initial release: Avatar, Button, Icon, Loader, TextInput, TextArea, createRemoteComponent
+- initial release: `Avatar`, `Button`, `Icon`, `Loader`, `TextInput`, `TextArea` components, `createRemoteComponent` helper
