@@ -18,5 +18,5 @@ elif [[ $2 == "--production" ]]; then
   echo "publishing $1 production release"
   npm ci
   npm run check-changelog
-  npm publish --dry-run
+  npm publish
 fi
