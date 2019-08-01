@@ -18,9 +18,10 @@
     "lint": "eslint .",
     "changelog": "node server/changelog.js",
     "check-changelog": "node server/check-changelog.js",
+
     "start": "npm run serve",
     "test": "npm run lint",
-    "prepublishOnly": "npm run check-changelog && npm test && npm run rollup",
+    "prepublishOnly": "npm test && npm run rollup",
     "postversion": "npm run changelog"
   },
   "dependencies": {
