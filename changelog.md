@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [unreleased]
+- `lib/checkbox-button.js`:  CheckboxButton component
+
 ## [0.1.1] - 2019-07-31
 ### Added
 - created a changelog
@@ -13,4 +16,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] - 2019-07-31
 ### Added
-- initial release: avatar, button, icon, loader, text inputs, 
+- initial release: Avatar, Button, Icon, Loader, TextInput, TextArea, createRemoteComponent
