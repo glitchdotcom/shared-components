@@ -1,6 +1,6 @@
 {
   "name": "@fogcreek/shared-components",
-  "version": "0.1.4-34953dc.0",
+  "version": "0.1.1",
   "description": "Shared components",
   "main": "build/main.js",
   "module": "build/module.js",
@@ -12,13 +12,17 @@
     "node": "10.x"
   },
   "scripts": {
-    "start": "npm run serve",
     "serve": "node server/index.js",
     "rollup": "rollup lib/index.js -c",
     "prettify": "prettier --write './{lib,server,test}/**/*.js'",
     "lint": "eslint .",
+    "changelog": "node server/changelog.js",
+    "check-changelog": "node server/check-changelog.js",
+
+    "start": "npm run serve",
     "test": "npm run lint",
-    "prepublishOnly": "npm test && npm run rollup"
+    "prepublishOnly": "npm test && npm run rollup",
+    "postversion": "npm run changelog"
   },
   "dependencies": {
     "prop-types": "15.x",
