@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## [unreleased]
+- `SearchResults` & `ResultsList` components
+- `Overlay` & `Popover` components with `Info`, `Actions`, and `DangerZone` blocks
 - `lib/animation-container.js`: `AnimationContainer` component, `slideUp` and `slideDown` animations
 - `lib/checkbox-button.js`:  `CheckboxButton` component
 
