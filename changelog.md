@@ -6,12 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [unreleased]
+- `SearchResults` & `ResultsList` components
+
 ## [0.2.0]
 - `lib/animation-container.js`: `AnimationContainer` component, `slideUp` and `slideDown` animations
 - `lib/checkbox-button.js`:  `CheckboxButton` component
 - `lib/icon-button.js`: `IconButton` component
 - `lib/overlay.js`: `Overlay` component
 - `lib/popover.js`: `Popover` component
+- `lib/block.js`: `Info`, `Actions`, and `DangerZone` blocks for overlays and popovers
 
 ## [0.1.1] - 2019-07-31
 ### Added
