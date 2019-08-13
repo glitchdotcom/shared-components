@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 - `SearchResults` & `ResultsList` components
-- update 
+- update `AnimationContainer` to handle reduced motion
 
 ## [0.2.0]
 - `lib/animation-container.js`: `AnimationContainer` component, `slideUp` and `slideDown` animations
