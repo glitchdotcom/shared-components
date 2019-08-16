@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [unreleased]
+## [0.3.0] - 2019-08-16
+- `lib/badge.js` - `Badge` component
 - `SearchResults` & `ResultsList` components
 - update `AnimationContainer` to handle reduced motion
 
