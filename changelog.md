@@ -6,12 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.4.0] - 2019-08-19
+### Added
+- `lib/button-group.js`: `ButtonGroup` and `SegmentedButton` components
+### Changed
+- `lib/button.js`: add "active" state for buttons
+
 ## [0.3.0] - 2019-08-16
+### Added
 - `lib/badge.js` - `Badge` component
 - `SearchResults` & `ResultsList` components
 - update `AnimationContainer` to handle reduced motion
 
 ## [0.2.0]
+### Added
 - `lib/animation-container.js`: `AnimationContainer` component, `slideUp` and `slideDown` animations
 - `lib/checkbox-button.js`:  `CheckboxButton` component
 - `lib/icon-button.js`: `IconButton` component
