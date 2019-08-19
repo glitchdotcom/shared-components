@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.5.0] - 2019-08-19
+### Added
+- `lib/live-announcer.js`: aria-live announcer components for Notification a11y
+- `lib/notification.js`: `Notification`, `NotificationsContainer`, `NotificationsProvider` components; `useNotifications` hook
+- `lib/progress.js`: `Progress` component
+### Changed
+- `lib/button.js`: add margin for CTA button (to account for shadow)
+- `lib/themes.js`: update theme colors for contrast a11y
+
 ## [0.4.0] - 2019-08-19
 ### Added
 - `lib/button-group.js`: `ButtonGroup` and `SegmentedButton` components
