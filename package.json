@@ -1,6 +1,6 @@
 {
   "name": "@fogcreek/shared-components",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Shared components",
   "main": "build/main.js",
   "module": "build/module.js",
@@ -18,7 +18,6 @@
     "lint": "eslint .",
     "changelog": "node server/changelog.js",
     "check-changelog": "node server/check-changelog.js",
-
     "start": "npm run serve",
     "test": "npm run lint",
     "prepublishOnly": "npm test && npm run rollup",
