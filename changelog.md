@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.5.1] - 2019-08-30
+### Changed
+- `lib/button.js`: added `:disabled` styling for buttons
+
 ## [0.5.0] - 2019-08-19
 ### Added
 - `lib/live-announcer.js`: aria-live announcer components for Notification a11y
