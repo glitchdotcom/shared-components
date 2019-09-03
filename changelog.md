@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.5.2] - 2019-08-30
+### Changed
+- `lib/button.js`: changed `white-space` property so buttons don't overflow their containers
+
 ## [0.5.1] - 2019-08-30
 ### Changed
 - `lib/button.js`: added `:disabled` styling for buttons
