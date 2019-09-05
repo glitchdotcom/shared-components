@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.5.3] - 2019-09-05
+### Changed
+- `lib/text-input.js`: added box-shadow styling when input is focused
+- `lib/themes.js`: added focus color
+
 ## [0.5.2] - 2019-08-30
 ### Changed
 - `lib/button.js`: changed `white-space` property so buttons don't overflow their containers
