@@ -26,7 +26,10 @@
   "dependencies": {
     "prop-types": "15.x",
     "react-textarea-autosize": "^7.1.0",
-    "styled-components": "4.x"
+    "styled-components": "4.x",
+    "@babel/core": "^7.6.0",
+    "@babel/cli": "^7.6.0",
+    "babel-plugin-styled-components": "^1.10.6"
   },
   "peerDependencies": {
     "react": "^16.8.0"
