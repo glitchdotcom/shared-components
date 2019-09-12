@@ -14,28 +14,30 @@
   "scripts": {
     "serve": "node server/index.js",
     "rollup": "rollup lib/index.js -c",
+    "babelify": "babel build/module.js -o build/module.babel.js",
+    "rerollup": "rollup build/module.babel.js -c",
     "prettify": "prettier --write './{lib,server,test}/**/*.js'",
     "lint": "eslint .",
     "changelog": "node server/changelog.js",
     "check-changelog": "node server/check-changelog.js",
     "start": "npm run serve",
     "test": "npm run lint",
-    "prepublishOnly": "npm test && npm run rollup",
+    "prepublishOnly": "npm test && npm run rollup && npm run babelify && npm run rerollup",
     "postversion": "npm run changelog"
   },
   "dependencies": {
     "prop-types": "15.x",
     "react-textarea-autosize": "^7.1.0",
-    "styled-components": "4.x",
-    "@babel/core": "^7.6.0",
-    "@babel/cli": "^7.6.0",
-    "babel-plugin-styled-components": "^1.10.6"
+    "styled-components": "4.x"
   },
   "peerDependencies": {
     "react": "^16.8.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
     "babel-eslint": "^9.0.0",
+    "babel-plugin-styled-components": "^1.10.6",
     "eslint": "^5.16.0",
     "eslint-config-react-app": "^4.0.1",
     "eslint-plugin-flowtype": "^2.50.3",
