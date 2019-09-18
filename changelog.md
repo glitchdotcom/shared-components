@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.8.0] - 2019-09-18
+### Changed
+- `lib/icon.js`: add "handshake" and "party" icons
+- `lib/popover.js`: fix documentation error
+- `lib/results-list.js`: put border on scroll container instead of inner results list
+
 ## [0.7.1] - 2019-09-17
 ### Changed
 - `package.json`: made `styled-components` a peer dependency
