@@ -1,6 +1,6 @@
 {
   "name": "@fogcreek/shared-components",
-  "version": "0.6.0",
+  "version": "0.7.1",
   "description": "Shared components",
   "main": "build/main.js",
   "module": "build/module.js",
@@ -25,11 +25,11 @@
   },
   "dependencies": {
     "prop-types": "15.x",
-    "react-textarea-autosize": "^7.1.0",
-    "styled-components": "4.x"
+    "react-textarea-autosize": "^7.1.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^16.8.0",
+    "styled-components": "^4.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
@@ -44,7 +44,8 @@
     "prettier": "^1.18.2",
     "react": "^16.8.0",
     "rollup": "^1.16.7",
-    "rollup-plugin-sucrase": "^2.1.0"
+    "rollup-plugin-sucrase": "^2.1.0",
+    "styled-components": "^4.3.2"
   },
   "repository": {
     "url": "https://github.com/FogCreek/shared-components"

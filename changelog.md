@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.7.1] - 2019-09-17
+### Changed
+- `package.json`: made `styled-components` a peer dependency
+
+## [0.7.0] - 2019-09-10
+### Changed
+- `lib/themes.js`: make 'selected' color a lighter shade of blue in light theme
+
 ## [0.6.0] - 2019-09-05
 ### Changed
 - `lib/themes.js`: make 'selected' color a lighter shade of blue in light theme
