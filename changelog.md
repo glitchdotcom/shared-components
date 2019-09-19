@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.9.0] - 2019-09-19
+### Changed
+- `.glitch-assets`: add "television" and "telephone" icons
+- `lib/icon.js`: add "television" and "telephone" icons
+
 ## [0.8.0] - 2019-09-18
 ### Changed
 - `lib/icon.js`: add "handshake" and "party" icons
