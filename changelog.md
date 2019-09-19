@@ -6,6 +6,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.8.0] - 2019-09-18
+### Changed
+- `lib/icon.js`: add "handshake" and "party" icons
+- `lib/popover.js`: fix documentation error
+- `lib/results-list.js`: put border on scroll container instead of inner results list
+
+## [0.7.1] - 2019-09-17
+### Changed
+- `package.json`: made `styled-components` a peer dependency
+
+## [0.7.0] - 2019-09-10
+### Changed
+- `lib/themes.js`: make 'selected' color a lighter shade of blue in light theme
+
+## [0.6.0] - 2019-09-05
+### Changed
+- `lib/themes.js`: make 'selected' color a lighter shade of blue in light theme
+
 ## [0.5.2] - 2019-08-30
 ### Changed
 - `lib/button.js`: changed `white-space` property so buttons don't overflow their containers
