@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.10.0] - 2019-09-23
+### Added
+- `lib/switch.js`: `Switch` component
+
 ## [0.9.1] - 2019-09-19
 ### Changed
 - `lib/text-input.js`: added box-shadow styling when input is focused
