@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.9.1] - 2019-09-19
+### Changed
+- `lib/text-input.js`: added box-shadow styling when input is focused
+- `lib/themes.js`: added focus color
+
 ## [0.9.0] - 2019-09-19
 ### Changed
 - `.glitch-assets`: add "television" and "telephone" icons
