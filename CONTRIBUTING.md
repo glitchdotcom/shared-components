@@ -20,17 +20,36 @@ Once the PR is approved, you can merge your branch directly on Github.
 
 ### Updating the NPM Package
 
+#### Create an account on NPM
+
 First, you need to have an NPM account and be a contributor to the shared-components NPM package
-```
+
 1. Create an NPM Account at [npmjs.com/signup](https://www.npmjs.com/signup)
+
 2. Provide your username to Jenn, Allyson, or Justin so they can add you as a contributor to the [shared-components NPM Package](https://www.npmjs.com/package/@fogcreek/shared-components)
+
+
+#### Update the NPM Version 
+
+Open the [shared-components app](https://shared-components.glitch.me) on Glitch, then run
+
+```
+# 1. Update the NPM version
+npm version patch
+
+# 2. Update changelog.md with your changes
+
+# 3. Push your changes to Github
 ```
 
-Next, update the NPM version and changelog with your latest updates.  
-Open the [shared-components app on Glitch](https://shared-components.glitch.me) on Glitch and th
+Finally, publish these changes to NPM
 ```
-1. and update the NPM version
+# 1. Locally, pull the latest changes from master
+
+# 2. Publish to NPM
+./shpublish.sh shared-components --production
 ```
+
 
 
 
