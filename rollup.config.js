@@ -1,3 +1,4 @@
+const babel = require('rollup-plugin-babel');
 const sucrase = require('rollup-plugin-sucrase');
 
 module.exports = {
@@ -19,6 +20,11 @@ module.exports = {
       include: ['**/*.js'],
       exclude: ['node_modules/**'],
       transforms: ['jsx'],
+    }),
+    babel({
+      exclude: 'node_modules/**',
+      plugins: ['styled-components'],
+      babelrc: false,
     }),
     // these might be needed eventually, but are not currently required
     //resolve({ preferBuiltins: false }),
