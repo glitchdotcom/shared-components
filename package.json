@@ -34,7 +34,7 @@
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "babel-eslint": "^9.0.0",
-    "babel-plugin-styled-components": "^1.10.6",
+    "babel-plugin-styled-components": "1.10.0",
     "eslint": "^5.16.0",
     "eslint-config-react-app": "^4.0.1",
     "eslint-plugin-flowtype": "^2.50.3",
