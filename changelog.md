@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.12.0] - 2019-10-15
+### Changed
+- `lib/icon.js`: added "blockArrowDown" and "blockArrowUp" icons
+
 ## [0.11.2] - 2019-10-09
 ### Changed
 - `lib/icons.js`: added "glitch fish" icon
