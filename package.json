@@ -1,6 +1,6 @@
 {
   "name": "@fogcreek/shared-components",
-  "version": "0.11.2",
+  "version": "0.11.3",
   "description": "Shared components",
   "main": "build/main.js",
   "module": "build/module.js",
