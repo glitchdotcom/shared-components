@@ -26,7 +26,7 @@ First, you need to have an NPM account and be a contributor to the shared-compon
 
 1. Create an NPM Account at [npmjs.com/signup](https://www.npmjs.com/signup)
 
-2. Provide your username to Jenn, Allyson, or Justin so they can add you as a contributor to the [shared-components NPM Package](https://www.npmjs.com/package/@fogcreek/shared-components)
+2. Provide your username to Jenn so she can add you as a contributor to the [shared-components NPM Package](https://www.npmjs.com/package/@fogcreek/shared-components)
 
 
 #### Update the NPM Version 
@@ -37,9 +37,11 @@ Open the [shared-components app](https://shared-components.glitch.me) on Glitch,
 # 1. Update the NPM version
 npm version patch
 
-# 2. Update changelog.md with your changes
+# 2. Refresh the container with `refresh`
 
-# 3. Push your changes to Github
+# 3. Update changelog.md with your changes
+
+# 4. Push your changes to Github
 ```
 
 Finally, publish these changes to NPM
