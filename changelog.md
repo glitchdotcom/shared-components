@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.13.0] - 2019-10-16
+## [0.12.0] - 2019-10-16
 ### Changed
 - `lib/icon.js`: added "blockArrowDown" and "blockArrowUp" icons
 
