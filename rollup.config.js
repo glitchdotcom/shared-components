@@ -1,4 +1,4 @@
-const sucrase = require('rollup-plugin-sucrase');
+const babel = require('rollup-plugin-babel');
 
 module.exports = {
   external: ['prop-types', 'react', 'react-dom', 'react-textarea-autosize', 'styled-components'],
@@ -14,11 +14,9 @@ module.exports = {
   ],
   plugins: [
     // transpiler just for JSX -> JS
-    // use babel + plugins on the _consumer_ side, if needed
-    sucrase({
-      include: ['**/*.js'],
-      exclude: ['node_modules/**'],
-      transforms: ['jsx'],
+    babel({
+      exclude: 'node_modules/**',
+      plugins: ['styled-components', '@babel/plugin-transform-react-jsx'],
     }),
     // these might be needed eventually, but are not currently required
     //resolve({ preferBuiltins: false }),
