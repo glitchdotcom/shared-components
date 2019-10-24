@@ -6,10 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+
 ## [0.13.0] - 2019-10-17
 ### Changed
 - `lib/block.js`: added styles that were being overridden on glitch.com
 - `lib/popover.js`: added "startOpen" prop for popovers that should be open on page load
+
+## [0.12.1] - 2019-10-16
+### Changed
+- `rollup.config.js`: run the styled-components babel plugin in builds
 
 ## [0.12.0] - 2019-10-16
 ### Changed
