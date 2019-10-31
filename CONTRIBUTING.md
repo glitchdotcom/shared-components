@@ -47,7 +47,7 @@ Finally, publish these changes to NPM
 # 1. Locally, pull the latest changes from master
 
 # 2. Publish to NPM
-./shpublish.sh shared-components --production
+./sh/publish.sh shared-components --production
 ```
 
 
