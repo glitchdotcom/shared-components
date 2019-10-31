@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.1] - 2019-10-31
+### Changed
+- `lib/text-input.js`: fixed CSS error breaking font size
+
 
 ## [0.13.0] - 2019-10-17
 ### Changed
