@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 
 const { getBundle } = require('./rollup');
 const { serveTest } = require('../test/remote-component/server');
@@ -15,8 +16,6 @@ const globals = {
   'react-textarea-autosize': 'TextareaAutosize',
 };
 
-const appRoot = process.env.RUNNING_LOCALLY ? 'shared-components' : 'app';
-
 app.use(express.static('public'));
 app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
@@ -25,14 +24,14 @@ app.use(function(req, res, next) {
 });
  
 app.get('/stories.js', async (req, res) => {
-  const output = await getBundle(`/${appRoot}/lib/stories.js`, { format: 'iife', output: { name: 'glitchComponentLibrary' }, globals });
+  const output = await getBundle(path.resolve(__dirname, '../lib/stories.js'), { format: 'iife', output: { name: 'glitchComponentLibrary' }, globals });
   res.type('js');
   res.send(output);
 });
 
 app.get('/module.js', async (req, res) => {
   const fullUrl = `https://${req.get('host')}${req.originalUrl}`;
-  const output = await getBundle(`/${appRoot}/lib/index.js`, {
+  const output = await getBundle(path.resolve(__dirname, '../lib/index.js'), {
     format: 'umd',
     name: 'glitchComponentLibrary',
     amd: { id: fullUrl, define: 'defineSharedComponent' },

@@ -2,10 +2,6 @@ const rollup = require('rollup');
 
 const rollupConfig = require('../rollup.config');
 const { watchFiles } = require('./watch');
-const dotenv = require('dotenv');
-
-dotenv.config();
-const appRoot = process.env.RUNNING_LOCALLY ? 'shared-components' : 'app';
 
 async function build({ filePath, bundleOptions, additionalConfig = {} }) {
   const bundle = await rollup.rollup({
@@ -20,7 +16,7 @@ async function build({ filePath, bundleOptions, additionalConfig = {} }) {
   return {
     code,
     filesToWatch: Object.keys(modules)
-      .filter((fileName) => fileName.startsWith(`/${appRoot}/`))
+      .filter((fileName) => fileName.startsWith(__dirname))
       .sort(),
   };
 }
