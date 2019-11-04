@@ -24,6 +24,7 @@
     "postversion": "npm run changelog"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "prop-types": "15.x",
     "react-textarea-autosize": "^7.1.0"
   },
