@@ -6,9 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.13.2] - 2019-11-04
+## [0.13.3] - 2019-11-05
 ### Changed
-- `lib/popover.js`: fix issue with popovers stealing back focus
+- `.glitch-assets`: added "coffin" icons
+- `CONTRIBUTING.md`: added instructions for adding emoji
+
+## [0.13.2] - 2019-11-05
+### Changed
+- `.glitch-assets`
 
 ## [0.13.1] - 2019-10-31
 ### Changed
