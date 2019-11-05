@@ -25,7 +25,7 @@ In production applications, you will likely want to use the following babel plug
 ## Development
 This package also renders its own documentation and development environment.
 
-**TODO** explain how glitch remix / pull request flow works, use docs from community site
+For more on making changes to shared-components, refer to [CONTRIBUTING.md](https://glitch.com/edit/#!/shared-components?path=CONTRIBUTING.md:1:0)
 
 ### Remote components
 While you are building or updating a component in this library, you may wish to see it in the context of your application. This package exports the helper `createRemoteComponent` that loads a development version of the library from a URL. For example:
