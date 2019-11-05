@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.2] - 2019-11-04
+### Changed
+- `lib/popover.js`: fix issue with popovers stealing back focus
+
 ## [0.13.1] - 2019-10-31
 ### Changed
 - `lib/text-input.js`: fixed CSS error breaking font size
