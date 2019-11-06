@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.4] - 2019-11-06
+### Changed
+- `lib/themes.js`: fixed z-index bug
+
 ## [0.13.3] - 2019-11-05
 ### Changed
 - `.glitch-assets`: added "coffin" icons
