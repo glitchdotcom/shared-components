@@ -40,15 +40,19 @@ First, you need to have an NPM account and be a contributor to the shared-compon
 
 #### Update the NPM Version 
 
-Open the [shared-components app](https://shared-components.glitch.me) on Glitch, then run
+Open the [shared-components app](https://shared-components.glitch.me) on Glitch, then
 
 ```
-# 1. Update the NPM version
+# 1. Pull the latest changes from Github 
+git pull origin master
+
+# 2. Update the NPM version
 npm version patch
 
-# 2. Update changelog.md with your changes
+# 3. Update changelog.md with your changes
 
-# 3. Push your changes to Github
+# 4. Push your changes to Github
+git push origin master
 ```
 
 Finally, publish these changes to NPM
