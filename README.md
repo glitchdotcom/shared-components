@@ -27,8 +27,8 @@ This package also renders its own documentation and development environment.
 
 **TODO** explain how glitch remix / pull request flow works, use docs from community site
 
-### Running off Glitch
-If you'd like to work on this project off Glitch, clone the repository, then run `npm install` to setup the dependencies. Run `npm start` to start the server. 
+### Running Locally
+If you'd like to work on this project locally, clone the repository, then run `npm install` to setup the dependencies. Run `npm start` to start the server. 
 
 You may wish to add a .env file so that the project consistently starts on the same port. See .sample.env for an example. 
 
