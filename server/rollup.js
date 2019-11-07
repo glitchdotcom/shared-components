@@ -16,7 +16,7 @@ async function build({ filePath, bundleOptions, additionalConfig = {} }) {
   return {
     code,
     filesToWatch: Object.keys(modules)
-      .filter((fileName) => fileName.startsWith('/app/'))
+      .filter((fileName) => fileName.startsWith(__dirname))
       .sort(),
   };
 }
