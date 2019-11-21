@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.5] - 2019-11-21
+### Changed
+- `lib/icon.js`: added victoryHand and refresh icons
+
 ## [0.13.4] - 2019-11-06
 ### Changed
 - `lib/themes.js`: fixed z-index bug
