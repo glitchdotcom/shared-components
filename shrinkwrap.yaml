@@ -1,4 +1,5 @@
 dependencies:
+  dotenv: 8.2.0
   prop-types: 15.7.2
   react-textarea-autosize: 7.1.0
 devDependencies:
@@ -646,6 +647,12 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
+  /dotenv/8.2.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   /ee-first/1.1.1:
     dev: true
     resolution:
@@ -2186,6 +2193,7 @@ specifiers:
   '@babel/plugin-transform-react-jsx': ^7.2.0
   babel-eslint: ^9.0.0
   babel-plugin-styled-components: 1.10.5
+  dotenv: ^8.2.0
   eslint: ^5.16.0
   eslint-config-react-app: ^4.0.1
   eslint-plugin-flowtype: ^2.50.3
