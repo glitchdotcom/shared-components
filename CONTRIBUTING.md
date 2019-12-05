@@ -51,11 +51,26 @@ npm version patch
 
 # 3. Update changelog.md with your changes
 
-# 4. Push your changes to Github
+# 4. Add your changes
+git add -A
+git commit -m "your commit message"
+
+# 5. Push your changes to Github
 git push origin master
 ```
 
-Finally, publish these changes to NPM
+Finally, you can choose to either publish the changes as release candidate so you can test it within a ~community remix
+```
+# 1. Locally, pull the latest changes from master
+
+# 2. Publish to NPM
+./sh/publish.sh shared-components --rc
+
+# 3. Within your ~community remix, open up ~package.json and specify the version number of your release candidate.
+e.g.,  "@fogcreek/shared-components": "^0.13.9-026d833.0"
+```
+
+...or you can publish it directly as a new version.
 ```
 # 1. Locally, pull the latest changes from master
 
