@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.8] - 2019-12-05
+### Changed
+- `lib/popovers.js`: added max width for popovers
+
 ## [0.13.7] - 2019-12-05
 - brought back dividers to results list, added ability to mark a resultitem as private
 
