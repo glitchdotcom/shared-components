@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `lib/button.js`: add text wrapping as an option (default false)
 
 ## [0.13.9] - 2019-12-05
+### Changed
+- `lib/icons.js`: added editor icons, and set default size from 0.875em to 1em
 
 ## [0.13.8] - 2019-12-05
 ### Changed
