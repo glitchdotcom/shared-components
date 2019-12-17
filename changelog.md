@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.10] - 2019-12-17
+### Changed
+- `lib/block.js`: update flex so titles will wrap as needed
+- `lib/popover.js`: use `fit-content` for popover width
+
 ## [0.13.9] - 2019-12-05
 
 ## [0.13.8] - 2019-12-05
