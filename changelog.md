@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.13.10] - 2019-12-17
 ### Changed
 - `lib/block.js`: update flex so titles will wrap as needed
-- `lib/button.js`: add text wrapp
+- `lib/button.js`: add text wrapping as an option (default false)
 
 ## [0.13.9] - 2019-12-05
 
