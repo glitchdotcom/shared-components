@@ -63,7 +63,11 @@ You may decide you'd rather work locally or you'd rather test an entire version 
   react: path.resolve('./node_modules/react'),
   'styled-components': path.resolve('./node_modules/styled-components')
 ```
-We do this because otherwise shared-components will use its own version of react and styled-components, and you'll get an [error message mentioning invalid hooks](https://reactjs.org/warnings/invalid-hook-call-warning.html). In theory any package shared-components uses that is also used by community will need a similar alias to ensure we're only using one dependency. Note: this process that was just outlined is kind of a pain and not particularly sustainable. If you find a better alternative feel free to update this documentation!
+We do this because otherwise shared-components will use its own version of react and styled-components, and you'll get an [error message mentioning invalid hooks](https://reactjs.org/warnings/invalid-hook-call-warning.html) if you don't add the react alias. In theory any package shared-components uses that is also used by community will need a similar alias to ensure we're only using one dependency. 
+
+Note: this process that was just outlined is kind of a pain and not particularly sustainable. If you find a better alternative feel free to update this documentation!
+
+Another alternative to this process would be to [publish a prerelease version](#publishing-and-deploying). This is particularly convenient if you need to share this in-progress version with other teammates.
 
 ### Code Review
 While shared-components is a cross-team collaboration, any stylistic changes should be reviewed by design to ensure we're keeping a cohesive feel across the site. When making a pull request, do add a member of the design team for review. 
@@ -76,7 +80,7 @@ If you want to update an existing branch on github from work done on glitch.com,
 
 `./sh/update.sh my-remix`
 
-If you wish to update a glitch remix with changes on github, use the glitch terminal:
+If you wish to update a glitch remix with changes from github, use the glitch terminal:
 `git pull origin branch-name-on-github`
 
 ### Publishing and Deploying
@@ -89,9 +93,9 @@ If you wish to update a glitch remix with changes on github, use the glitch term
 1. Update changelog.md with your changes and commit
 1. Push your changes to Github
 `git push origin master`
-1. Pull your changes on the shared-components repo
-1. Consider if you'd like to publish a pre-release version or publish a regular version. Which ever you decide make sure your local master branch is up to date and then run one of these commands locally:
-    * Prereleases :
+1. Pull your changes on https://glitch.com/edit/#!/shared-components
+1. Consider if you'd like to publish a pre-release version or publish a regular version. Which ever you decide, make sure your local master branch is up to date and then run one of these commands locally:
+    * Prereleases:
 `./sh/publish.sh --rc`
     * Regular: `./sh/publish.sh --production`
 1. Go to the [remix](https://glitch.com/~shared-components) (join if necessary), and `git pull origin master` so that if someone remixes they'll have the latest version.
