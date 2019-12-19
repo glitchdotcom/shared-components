@@ -93,7 +93,6 @@ If you wish to update a glitch remix with changes from github, use the glitch te
 1. Update changelog.md with your changes and commit
 1. Push your changes to Github
 `git push origin master`
-1. Pull your changes on https://glitch.com/edit/#!/shared-components
 1. Consider if you'd like to publish a pre-release version or publish a regular version. Which ever you decide, make sure your local master branch is up to date and then run one of these commands locally:
     * Prereleases:
 `./sh/publish.sh --rc`
