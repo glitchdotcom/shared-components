@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.11] - 2020-01-02
+- update documentation
+
 ## [0.13.10] - 2019-12-17
 ### Changed
 - `lib/block.js`: update flex so titles will wrap as needed
