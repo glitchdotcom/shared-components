@@ -22,27 +22,5 @@ In production applications, you will likely want to use the following babel plug
 - [babel-plugin-styled-components](https://www.styled-components.com/docs/tooling#babel-plugin)
 - [babel-plugin-transform-react-remove-prop-types](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types#readme)
 
-## Development
-This package also renders its own documentation and development environment.
-
-For more on making changes to shared-components, refer to [CONTRIBUTING.md](https://glitch.com/edit/#!/shared-components?path=CONTRIBUTING.md:1:0)
-
-### Running Locally
-If you'd like to work on this project locally, clone the repository, then run `npm install` to setup the dependencies. Run `npm start` to start the server. 
-
-You may wish to add a .env file so that the project consistently starts on the same port. See .sample.env for an example. 
-
-### Remote components
-While you are building or updating a component in this library, you may wish to see it in the context of your application. This package exports the helper `createRemoteComponent` that loads a development version of the library from a URL. For example:
-
-```js
-import { Icon, createRemoteComponent } from '@fogcreek/shared-components'
-
-const DevIcon = createRemoteComponent('https://sour-environment.glitch.me/module.js', 'Icon');
-```
-
-In the above case, `<Icon>` will render the Icon component as its defined in the version of shared-components on npm, but `<DevIcon>` will render the Icon component as its currently defined in the `sour-environment` remix of shared-components. If you change how Icon renders in this remix, it will be reflected in how DevIcon renders in your application.
-
-Note that at this time, this only works for React components, not themes or other imports.
-
-You can see a demo of this in `/test/remote-component/index.js`.
+## Contributing
+For information on making changes to shared-components, refer to [CONTRIBUTING.md](https://glitch.com/edit/#!/shared-components?path=CONTRIBUTING.md:1:0)
