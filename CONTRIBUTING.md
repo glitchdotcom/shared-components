@@ -105,7 +105,7 @@ First, you need to have an NPM account and be a contributor to the shared-compon
 
 1. Create an NPM Account at [npmjs.com/signup](https://www.npmjs.com/signup)
 
-1. Ask in #pod-shared-components for someone to add you as a contributor to the [shared-components NPM Package](https://www.npmjs.com/package/@fogcreek/shared-components)
+1. Ask in #pod-shared-components for someone to add you to the [FogCreek organization](https://docs.npmjs.com/adding-members-to-your-org). You should then automatically be an admin for shared-components
 
 ### Additional Resources
 * [Styled Components Docs](https://www.styled-components.com/docs/basics#getting-started) 
