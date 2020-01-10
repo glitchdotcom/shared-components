@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.13] - 2020-01-10
+### Changed
+- `lib/icons.js`: added editor icons, and set default size from 0.875em to 1em
+
 ## [0.13.12] - 2020-01-08
 - `lib/button.js`: fix issue where Button components were outputting `true` on the line for font-size
 
@@ -16,8 +20,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - `lib/block.js`: update flex so titles will wrap as needed
 - `lib/button.js`: add text wrapping as an option (default false)
-
-## [0.13.9] - 2019-12-05
 
 ## [0.13.8] - 2019-12-05
 ### Changed
