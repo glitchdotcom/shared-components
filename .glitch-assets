@@ -58,7 +58,6 @@
 {"name":"mouse.png","date":"2019-09-10T14:07:50.101Z","url":"https://cdn.glitch.com/3e774f68-7017-4c21-bced-dc0e98e90643%2Fmouse.png","type":"image/png","size":2214,"imageWidth":32,"imageHeight":32,"thumbnail":"https://cdn.glitch.com/3e774f68-7017-4c21-bced-dc0e98e90643%2Fmouse.png","thumbnailWidth":32,"thumbnailHeight":32,"uuid":"n48qBPsfGdKgWFTM"}
 {"name":"party.png","date":"2019-09-18T14:12:56.192Z","url":"https://cdn.glitch.com/967447b4-a24e-4bae-80e4-3aee75414e03%2Fparty.png","type":"image/png","size":840,"imageWidth":32,"imageHeight":32,"thumbnail":"https://cdn.glitch.com/967447b4-a24e-4bae-80e4-3aee75414e03%2Fparty.png","thumbnailWidth":32,"thumbnailHeight":32,"uuid":"TWHdhjQQDEgfyFmG"}
 {"name":"handshake.png","date":"2019-09-18T14:12:56.216Z","url":"https://cdn.glitch.com/967447b4-a24e-4bae-80e4-3aee75414e03%2Fhandshake.png","type":"image/png","size":388,"imageWidth":32,"imageHeight":32,"thumbnail":"https://cdn.glitch.com/967447b4-a24e-4bae-80e4-3aee75414e03%2Fhandshake.png","thumbnailWidth":32,"thumbnailHeight":32,"uuid":"TT0ywpqxKZe7TjvN"}
-<<<<<<< HEAD
 {"uuid":"adSBq97hhhpFNUna","deleted":true}
 {"uuid":"n48qBPsfGdKgWFTM","deleted":true}
 {"uuid":"hVcGvKdPfBsyprDT","deleted":true}
@@ -67,10 +66,8 @@
 {"uuid":"TT0ywpqxKZe7TjvN","deleted":true}
 {"name":"handshake.png","date":"2019-09-19T21:16:43.312Z","url":"https://cdn.glitch.com/652d1806-f6c1-4fa5-82e8-d5aa0e605a64%2Fhandshake.png","type":"image/png","size":3062,"imageWidth":64,"imageHeight":64,"thumbnail":"https://cdn.glitch.com/652d1806-f6c1-4fa5-82e8-d5aa0e605a64%2Fhandshake.png","thumbnailWidth":64,"thumbnailHeight":64,"uuid":"lw79Tt2E0VH1SBFm"}
 {"name":"party.png","date":"2019-09-19T21:16:43.442Z","url":"https://cdn.glitch.com/652d1806-f6c1-4fa5-82e8-d5aa0e605a64%2Fparty.png","type":"image/png","size":3581,"imageWidth":64,"imageHeight":64,"thumbnail":"https://cdn.glitch.com/652d1806-f6c1-4fa5-82e8-d5aa0e605a64%2Fparty.png","thumbnailWidth":64,"thumbnailHeight":64,"uuid":"ns0QRfk2fx9WH3YD"}
-=======
 {"name":"television.png","date":"2019-09-18T17:17:05.770Z","url":"https://cdn.glitch.com/32dd50d3-63ab-4f23-a824-4e0ccfbdc9fe%2Ftelevision.png","type":"image/png","size":2510,"imageWidth":32,"imageHeight":32,"thumbnail":"https://cdn.glitch.com/32dd50d3-63ab-4f23-a824-4e0ccfbdc9fe%2Ftelevision.png","thumbnailWidth":32,"thumbnailHeight":32,"uuid":"T7fWdZXlIkWZaGXi"}
 {"name":"telephone.png","date":"2019-09-18T17:17:05.871Z","url":"https://cdn.glitch.com/32dd50d3-63ab-4f23-a824-4e0ccfbdc9fe%2Ftelephone.png","type":"image/png","size":1494,"imageWidth":32,"imageHeight":32,"thumbnail":"https://cdn.glitch.com/32dd50d3-63ab-4f23-a824-4e0ccfbdc9fe%2Ftelephone.png","thumbnailWidth":32,"thumbnailHeight":32,"uuid":"hmZRH2kdlR5C5XSm"}
->>>>>>> ac69794eda99d5146e67120c9fae1d76f6fe5d8a
 {"name":"backhand.png","date":"2019-09-19T21:30:51.311Z","url":"https://cdn.glitch.com/652d1806-f6c1-4fa5-82e8-d5aa0e605a64%2Fbackhand.png","type":"image/png","size":2727,"imageWidth":64,"imageHeight":64,"thumbnail":"https://cdn.glitch.com/652d1806-f6c1-4fa5-82e8-d5aa0e605a64%2Fbackhand.png","thumbnailWidth":64,"thumbnailHeight":64,"uuid":"lkEbiPJZKuKMguXc"}
 {"uuid":"hmZRH2kdlR5C5XSm","deleted":true}
 {"name":"telephone.png","date":"2019-09-19T21:35:22.344Z","url":"https://cdn.glitch.com/652d1806-f6c1-4fa5-82e8-d5aa0e605a64%2Ftelephone.png","type":"image/png","size":2820,"imageWidth":64,"imageHeight":64,"thumbnail":"https://cdn.glitch.com/652d1806-f6c1-4fa5-82e8-d5aa0e605a64%2Ftelephone.png","thumbnailWidth":64,"thumbnailHeight":64,"uuid":"bKG3OcsOTzDPPGe2"}

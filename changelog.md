@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## [0.13.11] - 2019-01-10
+### Changed
+- `lib/icons.js`: added editor icons, and set default size from 0.875em to 1em
 
 ## [0.13.12] - 2020-01-08
 - `lib/button.js`: fix issue where Button components were outputting `true` on the line for font-size
@@ -16,8 +19,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - `lib/block.js`: update flex so titles will wrap as needed
 - `lib/button.js`: add text wrapping as an option (default false)
-
-## [0.13.9] - 2019-12-05
 
 ## [0.13.8] - 2019-12-05
 ### Changed
