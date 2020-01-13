@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.14] - 2020-01-13
+### Changed 
+- `.glitch-assets`: updated with all new editor icons
+- `lib/icons.js`: added editor icons that were missed from previous release
+
 ## [0.13.13] - 2020-01-10
 ### Changed
 - `lib/icons.js`: added editor icons, and set default size from 0.875em to 1em
