@@ -1,5 +1,5 @@
 {
-  "name": "@fogcreek/shared-components",
+  "name": "@glitchdotcom/shared-components",
   "version": "0.13.14",
   "description": "Shared components",
   "main": "build/main.js",
