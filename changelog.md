@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.15] - 2020-02-05
+### Changes
+- `lib/notifications.js`: 
+  - Modified default padding and width for notifications
+  - Added ability to remove a notification programmatically
+  - Set default notification timeout to 2.5s and added a persistent notification prop
+
 ## [0.13.14] - 2020-01-13
 ### Changed 
 - `.glitch-assets`: updated with all new editor icons
