@@ -6,8 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.16] - 2020-03-03
+### Changed 
+- `lib/icon.js`: 
+  - reverses orientation of the search icon's magnifying glass
+
 ## [0.13.15] - 2020-02-05
-### Changes
+### Changed
 - `lib/notifications.js`: 
   - Modified default padding and width for notifications
   - Added ability to remove a notification programmatically
