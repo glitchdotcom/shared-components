@@ -30,7 +30,7 @@ While the components in shared-components should be the kind of components you c
 One way to do that is to use this package's helper `createRemoteComponent` that loads a development version of the library from a URL. For example:
 
 ```js
-import { Icon, createRemoteComponent } from '@fogcreek/shared-components'
+import { Icon, createRemoteComponent } from '@glitchdotcom/shared-components'
 
 const DevIcon = createRemoteComponent('https://sour-environment.glitch.me/module.js', 'Icon');
 ```
@@ -105,7 +105,7 @@ First, you need to have an NPM account and be a contributor to the shared-compon
 
 1. Create an NPM Account at [npmjs.com/signup](https://www.npmjs.com/signup)
 
-1. Ask in #pod-shared-components for someone to add you to the [FogCreek organization](https://docs.npmjs.com/adding-members-to-your-org). You should then automatically be an admin for shared-components
+1. Ask in #pod-shared-components for someone to add you to the [GlitchDotCom organization](https://docs.npmjs.com/adding-members-to-your-org). You should then automatically be an admin for shared-components
 
 ### Additional Resources
 * [Styled Components Docs](https://www.styled-components.com/docs/basics#getting-started) 

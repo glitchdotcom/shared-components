@@ -5,7 +5,7 @@ const globals = {
   'react-dom': 'ReactDOM',
   'styled-components': 'styled',
   'prop-types': 'PropTypes',
-  '@fogcreek/shared-components': 'glitchComponentLibrary',
+  '@glitchdotcom/shared-components': 'glitchComponentLibrary',
 };
 
 const serveTest = (app) => {
