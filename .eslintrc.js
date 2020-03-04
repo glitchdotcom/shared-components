@@ -5,11 +5,11 @@ const ERROR = 2;
 module.exports = {
   env: {
     es6: true,
-    node: true,
+    browser: true,
   },
-  extends: ['plugin:jsx-a11y/recommended', 'plugin:react/recommended'],
+  extends: ['eslint:recommended', 'plugin:jsx-a11y/recommended', 'plugin:react/recommended'],
   parser: 'babel-eslint',
-  ignorePatterns: ['node_modules/', 'server/', 'test/', 'sh/', 'test/', 'build/'],
+  ignorePatterns: ['node_modules/', 'server/', 'test/', 'sh/', 'test/', 'build/', 'rollup.config.js'],
   rules: {
     'react/no-unescaped-entities': OFF,
     'react/prop-types': OFF /* TODO this would be nice */,
