@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.13.18] - 2020-03-06
+### Changed
+ - linting changes to several files 
+ - fix invalid property names in search icon from 0.13.16
+
+ ## [0.13.18-4223b0f.0] - 2020-03-05
+ Prelease version of linting & bug fixes 
+
 ## [0.13.16] - 2020-03-03
 ### Changed 
 - `lib/icon.js`: 
