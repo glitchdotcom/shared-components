@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.14.0] - 2020-03-10
+### Changed
+- `lib/icon.js`: add "boosted" icon
+
 ## [0.13.18] - 2020-03-06
 ### Changed
  - linting changes to several files 
