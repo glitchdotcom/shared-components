@@ -53,11 +53,11 @@ const renderPage = () => ({ html: null, helmet: null, styleTags: null });
 ```
 Another note: if you plan on using this component in multiple places you'll have to add the createRemoteComponent every place the component is used. This might be tricky if you're editing a component that's used widely, so you may wish to try the following process below instead.
 
-#### Testing a version of shared-components in the community stie
+#### Testing a version of shared-components in the community site
 You may decide you'd rather work locally or you'd rather test an entire version of shared-components before publishing. There are a number of different ways to do this but here is one possible route that may work for you:
 
 1. cd into community
-1. install your local copy of shared-componnents [using npm's local file path's feature](https://docs.npmjs.com/files/package.json#local-paths) ex: `npm install ../shared-components`
+1. install your local copy of shared-components [using npm's local file path's feature](https://docs.npmjs.com/files/package.json#local-paths) ex: `npm install ../shared-components`
 1. in community/aliases.js add to your webpack aliases: 
 ```
   react: path.resolve('./node_modules/react'),
@@ -105,7 +105,7 @@ First, you need to have an NPM account and be a contributor to the shared-compon
 
 1. Create an NPM Account at [npmjs.com/signup](https://www.npmjs.com/signup)
 
-1. Ask in #pod-shared-components for someone to add you to the [glitchdotcom organization](https://docs.npmjs.com/adding-members-to-your-org). You should then automatically be an admin for shared-components
+1. Ask in #pod-shared-components for someone to add you to the [GlitchDotCom organization](https://docs.npmjs.com/adding-members-to-your-org). You should then automatically be an admin for shared-components
 
 ### Additional Resources
 * [Styled Components Docs](https://www.styled-components.com/docs/basics#getting-started) 

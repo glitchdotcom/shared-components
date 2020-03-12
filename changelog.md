@@ -6,6 +6,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.14.0] - 2020-03-10
+### Changed
+- `lib/icon.js`: add "boosted" icon
+
+## [0.13.18] - 2020-03-06
+### Changed
+ - linting changes to several files 
+ - fix invalid property names in search icon from 0.13.16
+
+ ## [0.13.18-4223b0f.0] - 2020-03-05
+ Prelease version of linting & bug fixes 
+
+## [0.13.16] - 2020-03-03
+### Changed 
+- `lib/icon.js`: 
+  - reverses orientation of the search icon's magnifying glass
+
+## [0.13.15] - 2020-02-05
+### Changed
+- `lib/notifications.js`: 
+  - Modified default padding and width for notifications
+  - Added ability to remove a notification programmatically
+  - Set default notification timeout to 2.5s and added a persistent notification prop
+
 ## [0.13.14] - 2020-01-13
 ### Changed 
 - `.glitch-assets`: updated with all new editor icons
