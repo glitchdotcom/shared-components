@@ -1,6 +1,6 @@
 {
   "name": "@glitchdotcom/shared-components",
-  "version": "0.14.1",
+  "version": "0.14.2",
   "description": "Shared components",
   "main": "build/main.js",
   "module": "build/module.js",
@@ -14,6 +14,7 @@
   "scripts": {
     "serve": "node server/index.js",
     "rollup": "rollup lib/index.js -c",
+    "rollup:watch": "rollup lib/index.js -cw",
     "prettify": "prettier --write './{lib,server,test}/**/*.js'",
     "lint": "eslint .",
     "changelog": "node server/changelog.js",
