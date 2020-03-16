@@ -5,7 +5,7 @@ This is a library of React components used on Glitch's community site and editor
 ```sh
 npm install @glitchdotcom/shared-components
 ```
-
+ 
 This package has a peer dependency on React 16.8+ ("the one with hooks"); it also includes dependencies on prop-types and styled-components.
 
 ## Usage
