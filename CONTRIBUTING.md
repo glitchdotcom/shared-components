@@ -56,14 +56,35 @@ Another note: if you plan on using this component in multiple places you'll have
 #### Testing a version of shared-components in the community site
 You may decide you'd rather work locally or you'd rather test an entire version of shared-components before publishing. There are a number of different ways to do this but here is one possible route that may work for you:
 
-1. cd into community
-1. install your local copy of shared-components [using npm's local file path's feature](https://docs.npmjs.com/files/package.json#local-paths) ex: `npm install ../shared-components`
-1. in community/aliases.js add to your webpack aliases: 
-```
-  react: path.resolve('./node_modules/react'),
-  'styled-components': path.resolve('./node_modules/styled-components')
-```
-We do this because otherwise shared-components will use its own version of react and styled-components, and you'll get an [error message mentioning invalid hooks](https://reactjs.org/warnings/invalid-hook-call-warning.html) if you don't add the react alias. In theory any package shared-components uses that is also used by community will need a similar alias to ensure we're only using one dependency. 
+1. cd into shared-components
+    1. run `npm link`
+    1. run `npm run rollup:watch`
+1. in your editor, in the community site project: 
+    1. in aliases.js, add: 
+    ```
+    react: path.resolve('./node_modules/react'),
+    'styled-components': path.resolve('./node_modules/styled-components'),
+    ```
+
+    We do this because otherwise shared-components will use its own version of react and styled-components, and you'll get an [error message mentioning invalid hooks](https://reactjs.org/warnings/invalid-hook-call-warning.html) if you don't add the react alias. In theory any package shared-components uses that is also used by community will need a similar alias to ensure we're only using one dependency. 
+
+1. in a new terminal tab (`rollup:watch` should still be running in the shared-components tab), cd into community
+   1. run `npm uninstall @glitchdotcom/shared-components`
+   1. run `npm link @glitchdotcom/shared-components`
+1. After making changes to a shared component that you'd like to see reflected in your community site build, restart the community server
+   - you don't have to do anything in the terminal to rebuild shared-components; `rollup:watch` is handling that for you
+   - there are supposedly ways to make you not have to restart community, by `touch`ing an application file after the rollup new build is available, but Cassey couldn't get them working - Webpack would rebuild, but it seemed to cache the node_modules parts, so new changes from shared-components weren't picked up.
+   - see [NPM link troubleshooting guide](https://engineering.mixmax.com/blog/troubleshooting-npm-link) for more tips
+
+## Cleaning up from `npm link`
+Do this when you're done working with a local copy of shared-components inside a local version of community. **Don't skip this step!**
+1. in community, in your terminal:
+    1. run `npm unlink @glitchdotcom/shared-components`
+1. in shared-components, in your terminal:
+    1. stop the rollup watch process, if you haven't yet
+    1. run `npm unlink`
+1. back in community
+    1. reinstall shared-components from NPM (`npm install @glitchdotcom/shared-components`)
 
 Note: this process that was just outlined is kind of a pain and not particularly sustainable. If you find a better alternative feel free to update this documentation!
 
@@ -90,6 +111,7 @@ If you wish to update a glitch remix with changes from github, use the glitch te
 `git checkout master` and `git pull origin master`
 1. Update the NPM version
 `npm version patch`
+    - if you're intending to create a prerelease version, use `npm version prerelease` instead 
 1. Update changelog.md with your changes and commit
 1. Push your changes to Github
 `git push origin master`
