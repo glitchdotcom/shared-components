@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.14.2] - 2020-03-16
+### Changed
+- `lib/icon.js`: make "external" icon into an SVG so it responds to dark mode
+- `lib/avatar.js`: add a square variant
+
 ## [0.14.1] - 2020-03-12
 ### Changed
 - `lib/icon.js`: add "dev.to", "external", "linkedin", "twitter" icons
