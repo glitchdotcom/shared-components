@@ -1,5 +1,5 @@
+const path = require('path');
 const rollup = require('rollup');
-
 const rollupConfig = require('../rollup.config');
 const { watchFiles } = require('./watch');
 
@@ -13,11 +13,16 @@ async function build({ filePath, bundleOptions, additionalConfig = {} }) {
   const {
     output: [{ code, modules }],
   } = await bundle.generate(bundleOptions);
+
+  const fileToWatchPath = path.resolve(__dirname, '../lib');
+
+  const filesToWatch = Object.keys(modules)
+    .filter((fileName) => fileName.startsWith(fileToWatchPath))
+    .sort();
+
   return {
     code,
-    filesToWatch: Object.keys(modules)
-      .filter((fileName) => fileName.startsWith(__dirname))
-      .sort(),
+    filesToWatch,
   };
 }
 
