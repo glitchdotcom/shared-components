@@ -1,6 +1,12 @@
 #!/bin/bash
 # Updates the existing local and origin branches corresponding to the remix
+# pass an argument if you want to pull a different branch name than the current branch you're on
+# no argument needed to update against the branch name of the current branch
 
-git checkout $1
-git pull $1 master
-git push origin $1
+current_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+branchToUse="$1" && [[  -z "$1" ]]  && branchToUse="$(git rev-parse --abbrev-ref HEAD)"
+
+git checkout $branchToUse
+git pull $branchToUse master
+git push origin $branchToUse
