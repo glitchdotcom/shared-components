@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.14.3] - 2020-03-25
+### Added
+- add optimistic inputs and wrapping text input
+
 ## [0.14.2] - 2020-03-16
 ### Changed
 - `lib/icon.js`: make "external" icon into an SVG so it responds to dark mode
