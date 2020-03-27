@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.14.4] - 2020-03-27
+### Changed
+- actually export the components for optimistic inputs and wrapping text input 
+
 ## [0.14.3] - 2020-03-25
 ### Added
 - add optimistic inputs and wrapping text input
