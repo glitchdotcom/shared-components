@@ -20,7 +20,7 @@
     "changelog": "node server/changelog.js",
     "check-changelog": "node server/check-changelog.js",
     "start": "npm run serve",
-    "test": "npm run rollup && npm run lint",
+    "test": "npm run lint",
     "prepublishOnly": "npm test && npm run rollup",
     "postversion": "npm run changelog"
   },
