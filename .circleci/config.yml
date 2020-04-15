@@ -13,4 +13,4 @@ jobs:
           command: npm run lint
       - run:
           name: build
-          command: npm run build
+          command: npm run rollup
