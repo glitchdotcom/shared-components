@@ -14,3 +14,8 @@ jobs:
       - run:
           name: build
           command: npm run rollup
+workflows:
+  version: 2.1
+  regular-workflow:
+    jobs:
+      - lint_and_build
