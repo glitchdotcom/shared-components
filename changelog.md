@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.14.5-4e6e811.0] - 2020-04-16
+### Added
+- `lib/hooks/use-unique-id.js`:
+- `lib/tooltip.js`:
+### Changed
+- `CONTRIBUTING.md`:
+- `lib/hooks/use-debounced-value.js`:
+- `lib/themes.js`:
+
 ## [0.14.5-0] - 2020-04-16
 ### Added
 - `lib/hooks/use-unique-id.js`: copied over from dotcom
