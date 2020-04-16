@@ -6,10 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.14.5-1] - 2020-04-16
-Same as 0.14.5-0 but with extra export
+## [0.14.5-729f35b.0] - 2020-04-16
+Same as 0.14.5-4e6e811.0 but with extra export from useUniqueId
 
-## [0.14.5-0] - 2020-04-16
+## [0.14.5-4e6e811.0] - 2020-04-16
 ### Added
 - `lib/hooks/use-unique-id.js`: copied over from dotcom
 - `lib/tooltip.js`: adds tooltip
