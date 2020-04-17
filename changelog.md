@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.14.5] - 2020-04-17
+Releases the changes in 0.14.5-729f35b.0 and 0.14.5-4e6e811.0
+
 ## [0.14.5-729f35b.0] - 2020-04-16
 Same as 0.14.5-4e6e811.0 but with extra export from useUniqueId
 
