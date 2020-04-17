@@ -22,8 +22,8 @@ This package renders its own documentation and development environment. You can 
 2. Add some stories. 
    - A Story is a component exported from your `lib/` file whose name starts with `Story`. 
         - A Story with no underscore in the name will appear in the side navigation of the documentation page. (`StoryButton`)
-        - A Story with an underscore in the name will _not_ appear in the side navigation, but can still be deep-linked to. ([`StoryTextInput_and_TextAArea_variants](https://shared-components.glitch.me/#StoryTextInput_and_TextArea_variants))
-   - If you've added stories to a new `lib/` file, add an import for that file at the top of `lib/stories.js`.
+        - A Story with an underscore in the name will _not_ appear in the side navigation, but can still be deep-linked to. ([`StoryTextInput_and_TextArea_variants](https://shared-components.glitch.me/#StoryTextInput_and_TextArea_variants))
+   - If you've added stories to a new `lib/` file, add an import for that file at the top of `lib/stories.js` and add the variable you imported to the `modules` array.
    - All stories that are exported from files included in `stories.js` will appear on the documentation site. (the root webpage of your running app, or shared-components.glitch.me)
 3. **important!** Export your new component from `lib/index.js`. This is how your component gets into the NPM shared-components package.
 
