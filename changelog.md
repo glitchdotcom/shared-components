@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.14.8] - 2020-05-05
+Add `sharedGalaxy` to icon set
+
+## [0.14.7] - 2020-04-29
+### Changed
+- `lib/avatar.js`: fix Avatar defaultSrc behavior when src is null / undefined
+
 ## [0.14.6] - 2020-04-23
 Add EditableProjectDomain and a back arrow icon
 
