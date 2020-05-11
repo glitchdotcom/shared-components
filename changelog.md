@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.15.0] - 2020-05-08
+### Added
+- `lib/checkbox.js`: create Checkbox component
+
 ## [0.14.9] - 2020-05-06
 ### Changed
 - `lib/editable-project-domain.js`: update domain when initialName changes
