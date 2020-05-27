@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.16.0] - 2020-05-27
+### Changed
+- `lib/toggle.js`: add `disabled`, optional labels, color documentation to Toggle component
+
 ## [0.15.0] - 2020-05-08
 ### Added
 - `lib/checkbox.js`: create Checkbox component
