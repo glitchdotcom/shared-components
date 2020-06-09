@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.17.0] - 2020-06-09
+### Changed
+- `lib/icon.js`: lightningBolt, zzz icons; use `currentColor` for backArrow
+- `lib/icons/searchGalaxy.js`: use `currentColor` for icon
+
 ## [0.16.0] - 2020-05-27
 ### Changed
 - `lib/toggle.js`: add `disabled`, optional labels, color documentation to Toggle component
