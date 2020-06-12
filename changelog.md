@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.0] - 2020-06-12
+### Changed
+- `lib/icon.js`: add rocket emoji
+
 ## [0.17.0] - 2020-06-09
 ### Changed
 - `lib/icon.js`: lightningBolt, zzz icons; use `currentColor` for backArrow
