@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.1] - 2020-06-17
+### Changed
+- `lib/icon.js`: add textLightningBolt icon
+
+## [0.18.0] - 2020-06-12
+### Changed
+- `lib/icon.js`: add rocket emoji
+
 ## [0.17.0] - 2020-06-09
 ### Changed
 - `lib/icon.js`: lightningBolt, zzz icons; use `currentColor` for backArrow
@@ -50,7 +58,7 @@ Same as 0.14.5-4e6e811.0 but with extra export from useUniqueId
 
 ## [0.14.4] - 2020-03-27
 ### Changed
-- actually export the components for optimistic inputs and wrapping text input 
+- actually export the components for optimistic inputs and wrapping text input
 
 ## [0.14.3] - 2020-03-25
 ### Added
