@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.2] - 2020-07-09
+### Changed
+- `lib/visually-hidden.js`: add `show` prop
+
 ## [0.18.1] - 2020-06-17
 ### Changed
 - `lib/icon.js`: add textLightningBolt icon
