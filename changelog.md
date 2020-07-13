@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.4] - 2020-07-13
+### Changed
+- `lib/icon.js`: add info and clock icons
+- `lib/tooltip.js`: fix display of multiline tooltips
+
 ## [0.18.3] - 2020-07-10
 ### Changed
 - `lib/block.js`: Add `infobanner` and `actionsbanner` variants to Section, `banner` variant to Title

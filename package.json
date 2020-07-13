@@ -1,6 +1,6 @@
 {
   "name": "@glitchdotcom/shared-components",
-  "version": "0.18.3",
+  "version": "0.18.4",
   "description": "Shared components",
   "main": "build/main.js",
   "module": "build/module.js",
