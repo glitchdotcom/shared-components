@@ -6,8 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.6] - 2020-08-04
+### Added
+- `lib/icon.js`: Gift icon
+
 ## [0.18.5] - 2020-08-04
-Add Dark mode for CTA buttons
+### Added
+- `lib/theme.js`: Dark mode for CTA buttons
 
 ## [0.18.4] - 2020-07-13
 ### Changed
