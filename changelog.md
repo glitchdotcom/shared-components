@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.5] - 2020-08-04
+Add Dark mode for CTA buttons
+
+## [0.18.4] - 2020-07-13
+### Changed
+- `lib/icon.js`: add info and clock icons
+- `lib/tooltip.js`: fix display of multiline tooltips
+
+## [0.18.3] - 2020-07-10
+### Changed
+- `lib/block.js`: Add `infobanner` and `actionsbanner` variants to Section, `banner` variant to Title
+- `lib/overlay.js`: Add `banner` variant to Overlay
+
 ## [0.18.2] - 2020-07-09
 ### Changed
 - `lib/visually-hidden.js`: add `show` prop
