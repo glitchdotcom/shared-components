@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.8] - 2020-09-17
+
+### Added
+
+- `lib/icon.js`: Add lock, lockCode, and globe icons
+
 ## [0.18.7] - 2020-08-13
 
 ### Fixed
