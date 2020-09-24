@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.9] - 2020-09-24
+
+### Fixed
+
+- `lib/themes.js`: Swapped z-index of overlay and notifications so the latter aren't hidden any more.
+
 ## [0.18.8] - 2020-09-17
 
 ### Added
