@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.10] - 2020-09-25
+
+### Fixed
+
+- `lib/notifications.js`: clicks on close button no longer propagates through to background
+
 ## [0.18.9] - 2020-09-24
 
 ### Fixed
