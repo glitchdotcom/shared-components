@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.18.11] - 2020-10-07
+
+### Fixed
+
+- `lib/tooltip.js`: tooltip hover target no longer covers neighboring element
+
 ## [0.18.10] - 2020-09-25
 
 ### Fixed
