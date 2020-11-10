@@ -22,7 +22,8 @@
     "start": "npm run serve",
     "test": "npm run lint",
     "prepublishOnly": "npm test && npm run rollup",
-    "postversion": "npm run changelog"
+    "postversion": "npm run changelog",
+    "release": "auto shipit --base-branch=main"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -35,6 +36,7 @@
     "styled-components": "^4.3.0"
   },
   "devDependencies": {
+    "auto": "^9.53.1",
     "@babel/core": "^7.6.0",
     "@babel/plugin-transform-react-jsx": "^7.2.0",
     "babel-plugin-styled-components": "1.10.5",
@@ -53,6 +55,9 @@
   },
   "repository": {
     "url": "https://github.com/glitchdotcom/shared-components"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "license": "MIT",
   "keywords": [
