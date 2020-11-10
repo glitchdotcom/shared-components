@@ -22,7 +22,8 @@
     "start": "npm run serve",
     "test": "npm run lint",
     "prepublishOnly": "npm test && npm run rollup",
-    "postversion": "npm run changelog"
+    "postversion": "npm run changelog",
+    "release": "auto shipit --base-branch=master"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -37,14 +38,15 @@
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/plugin-transform-react-jsx": "^7.2.0",
+    "auto": "^10.3.0",
     "babel-plugin-styled-components": "1.10.5",
-    "express": "4.16.4",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-scope": "^5.0.0",
+    "express": "4.16.4",
     "prettier": "^1.18.2",
     "react": "^16.8.0",
     "rollup": "^1.16.7",
@@ -53,6 +55,9 @@
   },
   "repository": {
     "url": "https://github.com/glitchdotcom/shared-components"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "license": "MIT",
   "keywords": [
