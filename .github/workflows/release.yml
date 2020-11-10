@@ -32,7 +32,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           npm install --frozen-lockfile
-          npm run build
+          npm run rollup
 
       - name: Create Release
         env:
