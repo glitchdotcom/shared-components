@@ -1,5 +1,6 @@
 {
   "name": "@glitchdotcom/shared-components",
+  "author": "Glitch Product Engineering <eng@glitch.com>",
   "version": "0.18.12",
   "description": "Shared components",
   "main": "build/main.js",
