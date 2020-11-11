@@ -1,3 +1,15 @@
+# v0.19.1 (Wed Nov 11 2020)
+
+#### ⚠️ Pushed to `master`
+
+- Delete changelog.md ([@keithk](https://github.com/keithk))
+
+#### Authors: 1
+
+- Keith Kurson ([@keithk](https://github.com/keithk))
+
+---
+
 # v0.19.0 (Tue Nov 10 2020)
 
 #### 🚀 Enhancement
