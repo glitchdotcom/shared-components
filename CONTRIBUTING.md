@@ -117,29 +117,12 @@ If you wish to update a glitch remix with changes from github, use the glitch te
 `git pull origin branch-name-on-github`
 
 ### Publishing and Deploying
-1. First ensure you have the ability to [publish our package on npm](#becoming-a-maintainer-on-npm)
-1. Once your PR has been approved, merge it on github
-1. On your local machine bring master up to date:
-`git checkout master` and `git pull origin master`
-1. Update the NPM version
-`npm version patch`
-    - if you're intending to create a prerelease version, use `npm version prerelease` instead 
-1. Update changelog.md with your changes and commit
-1. Push your changes to Github
-`git push origin master`
-1. Consider if you'd like to publish a pre-release version or publish a regular version. Which ever you decide, make sure your local master branch is up to date and then run one of these commands locally:
-    * Prereleases:
-`./sh/publish.sh --rc`
-    * Regular: `./sh/publish.sh --production`
-1. Go to the [remix](https://glitch.com/~shared-components) (join if necessary), and `git pull origin master` so that if someone remixes they'll have the latest version.
+1. First ensure that your PR is tagged with either `patch`, `minor` or `major`, this will determine the version bump
+2. Once your PR has been approved, merge it on github
+3. A [github action](https://github.com/glitchdotcom/shared-components/actions) will fire, creating a new version of the shared-components package and apply updates to CHANGELOG.md
 
-#### Becoming a maintainer on NPM
-
-First, you need to have an NPM account and be a contributor to the shared-components NPM package
-
-1. Create an NPM Account at [npmjs.com/signup](https://www.npmjs.com/signup)
-
-1. Ask in #pod-shared-components for someone to add you to the [GlitchDotCom organization](https://docs.npmjs.com/adding-members-to-your-org). You should then automatically be an admin for shared-components
+### Other Labels
+- `skip-release` will skip the github action and not create a new release when the PR is merged
 
 ### Additional Resources
 * [Styled Components Docs](https://www.styled-components.com/docs/basics#getting-started) 
