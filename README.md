@@ -1,12 +1,23 @@
 # shared-components
 This is a library of React components used on Glitch's community site and editor.
 
-## Installation
-```sh
-npm install @glitchdotcom/shared-components
-```
+### Install from NPM
 
-This package has a peer dependency on React 16.8+ ("the one with hooks"); it also includes dependencies on prop-types and styled-components.
+This package is installed in the github packages repo, so you have to do a little
+configuration to set up your NPM to download the design system.
+
+In your project, ensure there is a `.npmrc` file containing:
+`registry=https://npm.pkg.github.com/glitchdotcom`
+
+Generate an [access token](https://github.com/settings/tokens) with the permissions `repo`, `write:packages` and `read:packages`.
+
+(TODO: save this access token to your dotfiles for cutting canary releases)
+
+In your terminal, login npm to your github account with your username and the access token as your password:
+`npm login --registry=https://npm.pkg.github.com/`
+
+Then you can install the design system:
+`npm install @glitchdotcom/shared-components`
 
 ## Usage
 For documentation of available components, see [shared-components.glitch.me](https://shared-components.glitch.me).
