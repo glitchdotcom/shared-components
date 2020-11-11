@@ -11,8 +11,6 @@ In your project, ensure there is a `.npmrc` file containing:
 
 Generate an [access token](https://github.com/settings/tokens) with the permissions `repo`, `write:packages` and `read:packages`.
 
-(TODO: save this access token to your dotfiles for cutting canary releases)
-
 In your terminal, login npm to your github account with your username and the access token as your password:
 `npm login --registry=https://npm.pkg.github.com/`
 
