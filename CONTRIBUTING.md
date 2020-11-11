@@ -121,6 +121,9 @@ If you wish to update a glitch remix with changes from github, use the glitch te
 2. Once your PR has been approved, merge it on github
 3. A [github action](https://github.com/glitchdotcom/shared-components/actions) will fire, creating a new version of the shared-components package and apply updates to CHANGELOG.md
 
+### Other Labels
+- `skip-release` will skip the github action and not create a new release when the PR is merged
+
 ### Additional Resources
 * [Styled Components Docs](https://www.styled-components.com/docs/basics#getting-started) 
 * [How we built a component library that people actually enjoy using](https://medium.com/styled-components/how-to-build-a-great-component-library-a40d974a412d)

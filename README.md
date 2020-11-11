@@ -34,4 +34,4 @@ In production applications, you will likely want to use the following babel plug
 - [babel-plugin-transform-react-remove-prop-types](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types#readme)
 
 ## Contributing
-For information on making changes to shared-components, refer to [CONTRIBUTING.md](https://glitch.com/edit/#!/shared-components?path=CONTRIBUTING.md:1:0)
+For information on making changes to shared-components, refer to [CONTRIBUTING.md](https://github.com/glitchdotcom/shared-components/blob/master/CONTRIBUTING.md)
