@@ -34,7 +34,7 @@
   },
   "peerDependencies": {
     "react": "^16.8.0",
-    "styled-components": "^4.3.0"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
