@@ -1,3 +1,20 @@
+# v0.20.0 (Mon Jun 14 2021)
+
+#### 🚀 Enhancement
+
+- use twemoji for icons [#135](https://github.com/glitchdotcom/shared-components/pull/135) ([@ckolderup](https://github.com/ckolderup))
+
+#### 🐛 Bug Fix
+
+- Update documentation [#129](https://github.com/glitchdotcom/shared-components/pull/129) ([@keithk](https://github.com/keithk))
+
+#### Authors: 2
+
+- Casey Kolderup ([@ckolderup](https://github.com/ckolderup))
+- Keith Kurson ([@keithk](https://github.com/keithk))
+
+---
+
 # v0.19.1 (Wed Nov 11 2020)
 
 #### ⚠️ Pushed to `master`
