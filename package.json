@@ -30,7 +30,8 @@
     "dotenv": "^8.2.0",
     "babel-eslint": "^10.1.0",
     "prop-types": "15.x",
-    "react-textarea-autosize": "^7.1.0"
+    "react-textarea-autosize": "^7.1.0",
+    "twemoji-parser": "^13.1.0"
   },
   "peerDependencies": {
     "react": "^16.8.0",
