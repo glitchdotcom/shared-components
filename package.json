@@ -10,7 +10,7 @@
     "build/module.js"
   ],
   "engines": {
-    "node": "12.x"
+    "node": ">=12.x"
   },
   "scripts": {
     "serve": "node server/index.js",
@@ -27,14 +27,14 @@
     "release": "auto shipit --base-branch=master"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
     "babel-eslint": "^10.1.0",
+    "dotenv": "^8.2.0",
     "prop-types": "15.x",
     "react-textarea-autosize": "^7.1.0",
     "twemoji-parser": "^13.1.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
+    "react": ">=16.8.0",
     "styled-components": "^4.3.0"
   },
   "devDependencies": {
@@ -50,7 +50,6 @@
     "eslint-scope": "^5.0.0",
     "express": "4.16.4",
     "prettier": "^1.18.2",
-    "react": "^16.8.0",
     "rollup": "^1.16.7",
     "rollup-plugin-babel": "^4.3.3",
     "styled-components": "^4.3.2"
