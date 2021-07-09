@@ -1,3 +1,15 @@
+# v0.21.0 (Fri Jul 09 2021)
+
+#### 🚀 Enhancement
+
+- Allow a higher version of React & Node [#137](https://github.com/glitchdotcom/shared-components/pull/137) ([@keithk](https://github.com/keithk))
+
+#### Authors: 1
+
+- Keith Kurson ([@keithk](https://github.com/keithk))
+
+---
+
 # v0.20.0 (Mon Jun 14 2021)
 
 #### 🚀 Enhancement
