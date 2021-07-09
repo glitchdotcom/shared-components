@@ -31,7 +31,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          npm install --frozen-lockfile
+          npm ci
           npm run rollup
 
       - name: Create Release
