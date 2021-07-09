@@ -52,7 +52,7 @@
     "prettier": "^1.18.2",
     "rollup": "^1.16.7",
     "rollup-plugin-babel": "^4.3.3",
-    "styled-components": "^4.3.2"
+    "styled-components": ">=4.3.2"
   },
   "repository": {
     "url": "https://github.com/glitchdotcom/shared-components"
