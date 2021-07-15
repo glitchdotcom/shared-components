@@ -1,3 +1,15 @@
+# v0.22.0 (Thu Jul 15 2021)
+
+#### 🚀 Enhancement
+
+- No longer specify the font-family in LocalStyle [#138](https://github.com/glitchdotcom/shared-components/pull/138) ([@keithk](https://github.com/keithk))
+
+#### Authors: 1
+
+- Keith Kurson ([@keithk](https://github.com/keithk))
+
+---
+
 # v0.21.0 (Fri Jul 09 2021)
 
 #### 🚀 Enhancement
