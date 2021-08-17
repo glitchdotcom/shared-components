@@ -1,3 +1,15 @@
+# v0.22.1 (Tue Aug 17 2021)
+
+#### 🐛 Bug Fix
+
+- fix protocol on twemoji urls [#139](https://github.com/glitchdotcom/shared-components/pull/139) ([@ckolderup](https://github.com/ckolderup))
+
+#### Authors: 1
+
+- Casey Kolderup ([@ckolderup](https://github.com/ckolderup))
+
+---
+
 # v0.22.0 (Thu Jul 15 2021)
 
 #### 🚀 Enhancement
