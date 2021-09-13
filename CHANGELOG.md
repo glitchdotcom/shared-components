@@ -1,3 +1,15 @@
+# v0.22.2 (Mon Sep 13 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Update to newer versions of things ([@keithk](https://github.com/keithk))
+
+#### Authors: 1
+
+- Keith Kurson ([@keithk](https://github.com/keithk))
+
+---
+
 # v0.22.1 (Tue Aug 17 2021)
 
 #### 🐛 Bug Fix
