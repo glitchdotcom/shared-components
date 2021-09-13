@@ -13,7 +13,6 @@ const globals = {
   'react-dom': 'ReactDOM',
   'styled-components': 'styled',
   'prop-types': 'PropTypes',
-  'react-textarea-autosize': 'TextareaAutosize',
 };
 
 app.use(express.static('public'));
