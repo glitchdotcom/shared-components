@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0",
-    "styled-components": ">=4.3.0"
+    "styled-components": ">=5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -52,7 +52,7 @@
     "prettier": "^1.18.2",
     "rollup": "^1.16.7",
     "rollup-plugin-babel": "^4.3.3",
-    "styled-components": ">=4.3.2"
+    "styled-components": ">=5.2.1"
   },
   "repository": {
     "url": "https://github.com/glitchdotcom/shared-components"
