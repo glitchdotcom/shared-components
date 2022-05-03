@@ -1,3 +1,15 @@
+# v0.22.3 (Tue May 03 2022)
+
+#### 🐛 Bug Fix
+
+- Use transient prop to avoid passing `fallback` to underlying div [#142](https://github.com/glitchdotcom/shared-components/pull/142) ([@ckolderup](https://github.com/ckolderup))
+
+#### Authors: 1
+
+- Casey Kolderup ([@ckolderup](https://github.com/ckolderup))
+
+---
+
 # v0.22.2 (Mon Sep 13 2021)
 
 #### ⚠️ Pushed to `master`
