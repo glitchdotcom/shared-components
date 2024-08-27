@@ -1,7 +1,14 @@
 const babel = require('rollup-plugin-babel');
 
 module.exports = {
-  external: ['prop-types', 'react', 'react-dom', 'react-textarea-autosize', 'styled-components'],
+  external: [
+    'prop-types',
+    'react',
+    'react-dom',
+    'react-textarea-autosize',
+    'styled-components',
+    'twemoji-parser'
+  ],
   output: [
     {
       file: 'build/main.js',
