@@ -1,3 +1,20 @@
+# v0.22.5 (Tue Aug 27 2024)
+
+#### 🐛 Bug Fix
+
+- fix github actions [#154](https://github.com/glitchdotcom/shared-components/pull/154) (pomax@Pomaxs-MacBook-Pro.local)
+- Update twomoji links [#153](https://github.com/glitchdotcom/shared-components/pull/153) (pomax@Pomaxs-MacBook-Pro.local)
+
+#### ⚠️ Pushed to `master`
+
+- Update release.yml (pomax@Pomaxs-MacBook-Pro.local)
+
+#### Authors: 1
+
+- Pomax ([@Pomax](https://github.com/Pomax))
+
+---
+
 # v0.22.3 (Tue May 03 2022)
 
 #### 🐛 Bug Fix
