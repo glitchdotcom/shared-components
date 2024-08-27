@@ -3,7 +3,7 @@ const path = require('path');
 const { exec } = require('child_process');
 const { version } = require('../package.json');
 
-const CHANGELOG_PATH = path.resolve(__dirname, '../changelog.md');
+const CHANGELOG_PATH = path.resolve(__dirname, '../CHANGELOG.md');
 const ignoredFiles = ['lib/index.js', 'lib/stories.js', 'changelog.md', 'package.json', 'package-lock.json'];
 
 const getGitDiff = () =>
