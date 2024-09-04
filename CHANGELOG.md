@@ -1,3 +1,15 @@
+# v0.22.6 (Wed Sep 04 2024)
+
+#### 🐛 Bug Fix
+
+- Add a folder icon to icon.js [#155](https://github.com/glitchdotcom/shared-components/pull/155) ([@Pomax](https://github.com/Pomax))
+
+#### Authors: 1
+
+- Pomax ([@Pomax](https://github.com/Pomax))
+
+---
+
 # v0.22.5 (Tue Aug 27 2024)
 
 #### 🐛 Bug Fix
